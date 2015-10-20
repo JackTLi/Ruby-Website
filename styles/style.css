@@ -1,0 +1,215 @@
+/****************************** Jumbotron */
+
+.jumbotron {
+	background-image: url(../Images/Home/HeaderPicture.png);
+	background-repeat: no-repeat;
+	background-color: black;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display:block;
+	text-align: center
+}
+
+/* NAVIGATION */
+
+.jumbotron .nav .home {
+	position: absolute;
+	left: 0;
+}
+
+.jumbotron .nav .home img {
+	float:left;
+	display: inline-block;	
+	height: 76px;
+	padding-left: 150px;
+}
+
+.jumbotron .nav {
+	font-weight: bold;
+	color: #fff;
+	padding-top: 0px;
+}
+
+.jumbotron .nav .links {
+	float: right;
+	display: inline-block;
+	position:absolute;
+	right: 0;
+	height: 70px;
+	padding-right: 150px;
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+
+.jumbotron .nav .links ul {
+	list-style-type: none;
+}
+
+.jumbotron .nav .links li {
+	display: inline;
+	padding-left: 50px;
+}
+
+
+/*****/
+
+.jumbotron .content #text_UXDESIGNER {
+	position:absolute;
+	transform: translateX(-300px);
+	top: 20%;
+	width: 600px;
+ 	vertical-align: middle;
+}
+
+.jumbotron #icon_HEADERARROW {
+	position: absolute;
+	display: inline-block;
+	transform: translateX(-50px);
+	bottom: 30px;
+	background-image: url(../Images/Shared/HeaderArrow.png);
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+}
+
+/****************************** Center Grid Pane */
+.centerPane {
+  overflow: auto;
+}
+
+.centerPane ul {
+  list-style-type: none;
+  width: 2000px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.centerPane li {
+	display: inline;
+	width: 25%;
+}
+
+.centerPane li img {
+	float:left;
+  	margin-top: 15px;
+  	margin-bottom: 30px;
+  	margin-right: 40px;
+  	width: 460px;
+}
+
+@media screen and (max-width: 2000px) {
+	.centerPane ul {
+		width: 1500px;
+	}
+}
+@media screen and (max-width: 1500px) {
+	.centerPane ul {
+		width: 1000px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.centerPane ul {
+		width: 500px;
+	}
+}
+
+/****************************** Footer */
+
+.footer {
+	position:relative;
+	background-color: #9698a5;
+	width: 100%;
+	height: 700px;
+}
+
+.footer .socialmedia {
+	float:none;
+	position: relative;
+	bottom: -350px;
+}
+
+.footer .socialmedia ul {
+	list-style-type: none;
+	text-align:center;
+}
+
+.footer .socialmedia ul li {
+	list-style-type: none;
+	margin-right: 20px;
+	display: inline;
+}
+
+.footer .socialmedia ul li img{
+	width: 50px;
+}
+@media screen and (max-width: 1500px) {
+	.footer .socialmedia ul li {
+		margin-right: 10px;
+	}
+	.footer .socialmedia ul li img{
+		width: 30px;
+	}
+}
+
+.footer .imageHalf {
+	display:block;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	float:left;
+	width: 20%;
+	height: 100%;
+	max-height: 350px;
+	text-align: center;
+
+	background-image: url(../Images/Home/ProfilePicture.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.footer .textHalf {
+	float:right;
+	width: 55%;
+	height: 100%;
+	max-height: 400px;
+	margin-right: 7.5%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.footer .textHalf h2 {
+	font-size:30px;
+	color: white;
+	text-align: justify;
+	font-weight: bold;
+	letter-spacing: 10px
+}
+
+.footer .textHalf p {
+	font-size: 20px;
+	color: white;
+	text-align: justify;
+	line-height: 200%;
+	opacity: 0.5;
+}
+
+/****************************** Universal */
+
+html{
+	 height:100%;
+	 min-height:100%;
+	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ }
+body{
+	margin: 0;
+	height: 100%;
+ 	min-height:100%;
+ }
