@@ -201,6 +201,16 @@
 	opacity: 0.5;
 }
 
+.CopyRight {
+	position: absolute;
+    bottom: 15px;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    color: #fff;
+    opacity: 0.5;
+}
+
 /****************************** Universal */
 
 html{
