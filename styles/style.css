@@ -2,6 +2,7 @@
 
 .jumbotron {
 	background-image: url(../Images/Home/HeaderPicture.jpg) !important;
+	background-image: url(../Images/Home/HeaderPicture@Low.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-attachment: fixed;
