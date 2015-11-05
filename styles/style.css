@@ -1,7 +1,7 @@
 /****************************** Jumbotron */
 
 .jumbotron {
-	background-image: url(../Images/Home/HeaderPicture.jpg);
+	background-image: url(../Images/Home/HeaderPicture.jpg) !important;
 	background-repeat: no-repeat;
 	background-color: black;
 	background-attachment: fixed;
