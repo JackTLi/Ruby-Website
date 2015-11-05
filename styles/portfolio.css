@@ -75,7 +75,7 @@
 
 /************************* BBQ */
 #BBQ .jumbotron {
-	background-image: url(../Images/Portfolio/BBQ/HeaderPicture.png);
+	background-image: url(../Images/Portfolio/BBQ/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -199,7 +199,7 @@
 
 
 #impactreport .description .image#elementone {
-	background-image: url(../Images/Portfolio/impactreport/ElementOne.png);
+	background-image: url(../Images/Portfolio/impactreport/ElementOne.jpg);
 	float:left;
 }
 
@@ -251,7 +251,7 @@
 }
 
 #knowledgehook .jumbotron {
-	background-image: url(../Images/Portfolio/knowledgehook/HeaderPicture.png);
+	background-image: url(../Images/Portfolio/knowledgehook/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -364,7 +364,7 @@
 
 
 #partnerpackage .description .image#elementone {
-	background-image: url(../Images/Portfolio/partnerpackage/ElementOne.png);
+	background-image: url(../Images/Portfolio/partnerpackage/ElementOne.jpg);
 	float:left;
 }
 
@@ -401,7 +401,7 @@
 
 /************************* Partners Meeting */
 #partnersmeeting .jumbotron {
-	background-image: url(../Images/Portfolio/partnersmeeting/HeaderPicture.png);
+	background-image: url(../Images/Portfolio/partnersmeeting/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
