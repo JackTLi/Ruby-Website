@@ -2,6 +2,18 @@
 
 .jumbotron {
 	background-image: url(../Images/Home/HeaderPicture@Low.jpg);
+	background-repeat: no-repeat;
+	background-color: black;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	display:block;
+	text-align: center
+}
+
+.jumbotron #fullRes {
 	background-image: url(../Images/Home/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
