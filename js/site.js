@@ -1,5 +1,9 @@
 
+var currentPage = 0;
+
 $(document).ready(function() {
+
+	highlightAppropriateMenuItem();
 
 	var navSliderWidth = $('.navSlider').width();
 	$('.navSlider').css("right", (-1 * navSliderWidth)+ 'px');
@@ -20,6 +24,11 @@ $(document).ready(function() {
         	closeNavSlider();
         }
       });
+
+     $(".navSliderLink").click(function(event) {
+     	var href = $(this).attr('href');
+     	highlightMenuItemFromHref(href);
+     })
 });
 
 function openNavSlider () {
@@ -34,4 +43,68 @@ function closeNavSlider () {
 
 	$('.navSlider').animate( {"right": (-1 * navSliderWidth) }, 300);
 	$('.nav .links ul').animate( {"margin-right" : 0}, 300);
+}
+
+function highlightAppropriateMenuItem() {
+	if(window.location.hash) {
+	    var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+	    
+		highlightMenuItemFromHref (hash);
+	    
+	} else {
+	    
+	}
+}
+
+function highlightMenuItemFromHref (href) {
+	var hash = href.substring(href.indexOf('#')+1);
+
+	if (hash.indexOf('/') > -1)
+	{
+		hash = hash.substring(hash.indexOf('/') + 1);
+	}
+
+	    console.log(hash);
+	    
+	    if($('#BBQlink').hasClass('hilight')){
+	       $('#BBQlink').removeClass('hilight');
+	    }
+
+		if($('#impactreportlink').hasClass('hilight')){
+		   $('#impactreportlink').removeClass('hilight');
+		}
+
+		if($('#partnerpackagelink').hasClass('hilight')){
+		   $('#partnerpackagelink').removeClass('hilight');
+		}
+
+		if($('#partnermeetinglink').hasClass('hilight')){
+		   $('#partnermeetinglink').removeClass('hilight');
+		}
+
+		if($('#knowledgehooklink').hasClass('hilight')){
+		   $('#knowledgehooklink').removeClass('hilight');
+		}
+
+	   	if (hash == "BBQ")
+	    {
+	    	$('#BBQlink').addClass("hilight");
+	    }
+	    if (hash == "impactreport")
+	    {
+	    	$('#impactreportlink').addClass("hilight");
+	    }
+	    if (hash == "partnerpackage")
+	    {
+	    	$('#partnerpackagelink').addClass("hilight");
+	    }
+	    if (hash == "partnersmeeting")
+	    {
+	    	$('#partnermeetinglink').addClass("hilight");
+	    }
+	    if (hash == "knowledgehook")
+	    {
+	    	$('#knowledgehooklink').addClass("hilight");
+	    }
+
 }

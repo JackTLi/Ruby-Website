@@ -1,6 +1,10 @@
 /****************************** Portfolio Nav Slider */
 /* Activated by hamburger portfolio menu item*/
 
+.hilight {
+	font-weight: bold;
+}
+
 .navSlider {
 	background-color: black;
 	opacity: 0.75;
