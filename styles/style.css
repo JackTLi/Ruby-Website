@@ -386,7 +386,9 @@
 }
 
 #interaction {
-	background-image: url(../Images/Home/skills/interaction.png);
+	background-image: url(../Images/Home/skills/finger.png);
+	padding-bottom:15px;
+	margin-bottom:5px;
 }
 
 #storytelling {
