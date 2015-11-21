@@ -1,3 +1,124 @@
+/****************************** Portfolio Nav Slider */
+/* Activated by hamburger portfolio menu item*/
+
+.navSlider {
+	background-color: black;
+	opacity: 0.75;
+	position:fixed;
+	width: 400px;
+	height: 100%;
+
+	z-index: 5;
+}
+
+.navSlider li h2 {
+	color: #a39a95;
+	font-size: 2vw;
+	margin-bottom: 5px;
+}
+
+.navSlider li {
+	font-size: 1vw;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	list-style-type: none;
+}
+
+.navSlider li a {
+	text-decoration: none;	
+	color: #888;
+}
+
+/* NAVIGATION */
+
+.nav .home {
+	position: fixed;
+	left: 0;
+}
+
+.nav .home img {
+	float:left;
+	display: inline-block;	
+	height: 76px;
+	padding-left: 150px;
+}
+
+.nav {
+	font-weight: bold;
+	color: #fff;
+	padding-top: 0px;
+	position:fixed;
+	z-index: 7;
+}
+
+.nav .links {
+	float: right;
+	display: inline-block;
+	position:fixed;
+	right: 0;
+	height: 70px;
+	padding-right: 50px;
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+
+.nav .links ul {
+	list-style-type: none;
+}
+
+.nav .links li {
+	display: inline;
+	padding-left: 50px;
+	cursor:pointer;
+}
+
+#nav-toggle {
+}
+
+#nav-toggle span {
+	z-index:15;
+	position: fixed;
+    top: 36px;
+    right: 35px;
+    display: inline-block;
+    cursor:pointer;
+}
+
+#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+
 /****************************** Jumbotron */
 
 .jumbotron {
@@ -24,46 +145,6 @@
 	height: 100%;
 	display:block;
 	text-align: center
-}
-
-/* NAVIGATION */
-
-.jumbotron .nav .home {
-	position: absolute;
-	left: 0;
-}
-
-.jumbotron .nav .home img {
-	float:left;
-	display: inline-block;	
-	height: 76px;
-	padding-left: 150px;
-}
-
-.jumbotron .nav {
-	font-weight: bold;
-	color: #fff;
-	padding-top: 0px;
-}
-
-.jumbotron .nav .links {
-	float: right;
-	display: inline-block;
-	position:absolute;
-	right: 0;
-	height: 70px;
-	padding-right: 150px;
-	letter-spacing: 5px;
-	font-size: 25px;
-}
-
-.jumbotron .nav .links ul {
-	list-style-type: none;
-}
-
-.jumbotron .nav .links li {
-	display: inline;
-	padding-left: 50px;
 }
 
 #box    {  width:300px;
