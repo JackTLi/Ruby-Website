@@ -12,6 +12,20 @@
 	<script type="text/javascript" src="js/site.js"></script>
 </head>
 
+<script>
+$(window).load(function(){
+	makeImageBoxSquare();
+ });
+
+$(window).resize(function() {
+	makeImageBoxSquare();
+});
+
+function makeImageBoxSquare() {
+	var w = $('.imageBox').width();
+	$('.topHalf').css('height', w);
+}
+</script
 
 
 <body>
