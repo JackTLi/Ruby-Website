@@ -13,7 +13,7 @@
 
 .navSlider li h2 {
 	color: #a39a95;
-	font-size: 2vw;
+	font-size: 25px;
 	margin-bottom: 5px;
 }
 
@@ -31,6 +31,17 @@
 }
 
 /* NAVIGATION */
+
+.navBackground {
+	position:fixed;
+	top: 0;
+	width: 100%;
+	height: 76px;
+	background-color: #848a90;
+	z-index: ;
+
+	visibility: hidden;
+}
 
 .nav .home {
 	position: fixed;
