@@ -264,6 +264,27 @@
 	transform: translateY(-50%);
 }
 
+.footer .topHalf .textBox .socialmediaicons {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 399px;
+}
+
+.footer .topHalf .textBox .socialmediaicons img {
+	display: inline-block;
+}
+
+.footer .topHalf .textBox .socialmediaicons ul {
+}
+
+.footer .topHalf .textBox .socialmediaicons li {
+	list-style-type: none;
+	display: inline;
+	padding-right: 40px;
+}
+
 .footer .topHalf .textBox .headwrapper {
 	text-align: justify;
 	-ms-text-justify: distribute-all-lines;
@@ -353,6 +374,8 @@
 	margin-bottom: 20px;
 	margin-top: 20px;
 }
+
+
 
 #responsive {
 	background-image: url(../Images/Home/skills/responsive.png);
