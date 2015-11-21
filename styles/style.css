@@ -148,85 +148,139 @@
 
 .footer {
 	position:relative;
-	background-color: #9698a5;
 	width: 100%;
-	height: 60%;
 }
 
-.footer .socialmedia {
-	float:none;
-	position: relative;
-	bottom: -270px;
+.footer .topHalf {
+	padding-top: 200px;
+	height: 450px;
+	padding-bottom:200px;
 }
 
-.footer .socialmedia ul {
-	list-style-type: none;
-	text-align:center;
-}
-
-.footer .socialmedia ul li {
-	list-style-type: none;
-	margin-right: 20px;
-	display: inline;
-}
-
-.footer .socialmedia ul li img{
-	width: 50px;
-}
-@media screen and (max-width: 1500px) {
-	.footer .socialmedia ul li {
-		margin-right: 10px;
-	}
-	.footer .socialmedia ul li img{
-		width: 30px;
-	}
-}
-
-.footer .imageHalf {
-	display:block;
-	margin-left: 7.5%;
-	margin-right: 7.5%;
+.footer .topHalf .textBox {
+	color: #848a90;
+	width: calc(40% - 1px);
+	margin-left: 10%;
 	float:left;
-	width: 20%;
-	height: 100%;
-	max-height: 350px;
-	text-align: center;
+	padding: 5%;
 
-	background-image: url(../Images/Home/ProfilePicture.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-
-	position: relative;
+	border: 1px solid #848a90;
+	border-right: none;
 	top: 50%;
+	position:relative;
 	transform: translateY(-50%);
 }
 
-.footer .textHalf {
-	float:right;
-	width: 55%;
+.footer .topHalf .textBox .headwrapper {
+	text-align: justify;
+	-ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+} 
+
+.footer .topHalf .textBox .headwrapper .letters {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    font-weight:bold;
+	font-size: 4vw;
+}
+
+.footer .topHalf .textBox .headwrapper .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+.footer .topHalf .textBox p {
+	line-height: 30px;
+	letter-spacing: 1px;
+}
+
+.footer .topHalf .imageBox {
+	width: 40%;
 	height: 100%;
-	max-height: 400px;
-	margin-right: 7.5%;
-
-	position: relative;
-	top: 63%;
-	transform: translateY(-50%);
+	float:right;
+	background-size:cover;
+	background-image: url(../Images/Home/portrait.jpg);
 }
 
-.footer .textHalf h2 {
-	font-size:30px;
-	color: white;
-	text-align: justify;
-	font-weight: bold;
-	letter-spacing: 10px
+
+.footer .bottomHalf {
+	background-color: #9698a5;
+	color: #dadcdd;
 }
 
-.footer .textHalf p {
-	font-size: 20px;
-	color: white;
+.footer .bottomHalf .container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.footer .bottomHalf .container #mainheader {
+	font-size: 2.5vw;
+	position:relative;
+	display: inline-block;
+	color: #fff;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #fff;
+	left:50%;
+	font-weight:normal;
+	letter-spacing: 8px;
+	transform:translateX(-50%);
+}
+
+.footer .bottomHalf .container .list-container {
+	display: inline-block;
+	padding-top: 100px;
+}
+
+.footer .bottomHalf .container .list-container table {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer .bottomHalf .container .list-container table td {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.footer .bottomHalf .container .list-container .label {
+	float:left;
+	font-weight:bold;
+	font-size: 2vw;
+	line-height: 3vw;
+	letter-spacing: 6px;
+	width: 100%;
+
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: contain;
+	padding-bottom: 0px;
+	margin-bottom: 20px;
+}
+
+#responsive {
+	background-image: url(../Images/Home/skills/responsive.png);
+}
+
+#prototyping {
+	background-image: url(../Images/Home/skills/prototyping.png);
+}
+
+#interaction {
+	background-image: url(../Images/Home/skills/interaction.png);
+}
+
+#storytelling {
+	background-image: url(../Images/Home/skills/storytelling.png);
+}
+
+
+.footer .bottomHalf .container .list-container p {
+	line-height: 30px;
+	letter-spacing: 1px;
 	text-align: justify;
-	line-height: 200%;
-	opacity: 0.5;
 }
 
 .CopyRight {
