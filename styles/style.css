@@ -208,7 +208,7 @@
 
 
 .footer .bottomHalf {
-	background-color: #9698a5;
+	background-color: #848a90;
 	color: #dadcdd;
 }
 
@@ -248,7 +248,7 @@
 .footer .bottomHalf .container .list-container .label {
 	float:left;
 	font-weight:bold;
-	font-size: 2vw;
+	font-size: 2.5vw;
 	line-height: 3vw;
 	letter-spacing: 6px;
 	width: 100%;
