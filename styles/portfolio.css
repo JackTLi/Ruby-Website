@@ -3,6 +3,7 @@
 
 .hilight {
 	font-weight: bold;
+	color: #FFF !important;
 }
 
 .navSlider {
@@ -31,6 +32,7 @@
 .navSlider li a {
 	text-decoration: none;	
 	color: #888;
+	font-size: 17px;
 }
 
 
