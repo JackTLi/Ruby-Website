@@ -36,6 +36,7 @@ function openNavSlider () {
 
 	$('.navSlider').animate( {"right": 0 }, 300);
 	$('.nav .links ul').animate( {"margin-right": navSliderWidth - 50}, 300);
+	$('.navBackground').animate({"left": -1 * navSliderWidth}, 300);
 }
 
 function closeNavSlider () {
@@ -43,6 +44,7 @@ function closeNavSlider () {
 
 	$('.navSlider').animate( {"right": (-1 * navSliderWidth) }, 300);
 	$('.nav .links ul').animate( {"margin-right" : 0}, 300);
+	$('.navBackground').animate({"left": 0}, 300);
 }
 
 function highlightAppropriateMenuItem() {
