@@ -248,6 +248,7 @@
 	padding-top: 100px;
 	height: 450px;
 	padding-bottom:100px;
+	background-color:#f8f8f9;
 }
 
 .footer .topHalf .textBox {
@@ -322,13 +323,21 @@
 
 
 .footer .bottomHalf {
-	background-color: #848a90;
+	background-image: url(../Images/Home/HeaderPicture_dark.jpg);
+	background-repeat: no-repeat;
+	background-color: #8C909C;
+	background-position: center center;
+	background-size: cover;
 	color: #dadcdd;
 }
 
-.footer .bottomHalf .container {
+.footer .bottomHalf .container#specialized {
 	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 200px;
+	background: -webkit-linear-gradient(bottom, rgba(132,138,144,0),rgba(132,138,144,1),rgba(132,138,144,1),  rgba(132,138,144,1)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgba(132,138,144,0),rgba(132,138,144,1),rgba(132,138,144,1),  rgba(132,138,144,1)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgba(132,138,144,0),rgba(132,138,144,1),rgba(132,138,144,1),  rgba(132,138,144,1)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(132,138,144,0),rgba(132,138,144,1),rgba(132,138,144,1),  rgba(132,138,144,1)); /* Standard syntax (must be last) */
 }
 
 .footer .bottomHalf .container #mainheader {
@@ -345,7 +354,7 @@
 }
 
 .footer .bottomHalf .container .list-container {
-	display: inline-block;
+	display: block;
 	padding-top: 100px;
 }
 
@@ -375,6 +384,28 @@
 	margin-top: 20px;
 }
 
+.footer .bottomHalf .container#tools .list-container {
+}
+
+.footer .bottomHalf .container .list-container ul {
+	padding-left:0;
+	padding-right:0;
+	display:inline-block;
+	width:100%;
+	padding-bottom: 200px;
+}
+
+.footer .bottomHalf .container .list-container li {
+	float:left;
+	list-style-type: none;
+	vertical-align: middle;
+	display:inline-block;
+	text-align: center;
+	width: 20%;
+}
+.footer .bottomHalf .container .list-container li img {
+	display: inline-block;
+}
 
 
 #responsive {

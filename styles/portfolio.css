@@ -174,10 +174,10 @@
 	height: calc(100% - 200px);
 }
 
-#BBQ .description #image {
+#BBQ .imageBoxLeft
+{
 	float:left;
 	margin-left: 7.5%;
-	background-image: url(../Images/Portfolio/BBQ/ComputerPicture.png);
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -192,7 +192,33 @@
 	transform: translateY(-50%);
 }
 
-#BBQ .description .textBox {
+#BBQ .imageBoxRight
+{
+	float:right;
+	margin-right: 15%;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display:block;
+	width: 35%;
+	height: 50%;
+	max-width: 693px;
+	max-height: 856px;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#BBQ .description .imageBoxLeft#image1 {
+	background-image: url(../Images/Portfolio/BBQ/ComputerPicture.png);
+}
+
+#BBQ .description .imageBoxRight#image2 {
+	background-image: url(../Images/Portfolio/BBQ/tablet.png);
+}
+
+#BBQ .description .textBoxRight {
 
 	float:right;
 	width: 35%;
@@ -206,6 +232,20 @@
 
 	position: relative;
 }
+
+#BBQ .description .textBoxLeft {
+
+	float:left;
+	width: 35%;
+	height: 60%;
+	padding-left: 15%;
+	line-height: 40px;
+	padding-top: 250px;
+
+	position: relative;
+}
+
+
 #BBQ #coloredBox {
 	position:absolute;
 	left: -37px;
@@ -215,7 +255,7 @@
 
 }
 
-#BBQ .description .textBox h2 {
+#BBQ .description h2 {
 	color: #c79a72;
 }
 
