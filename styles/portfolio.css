@@ -432,17 +432,16 @@
 }
 
 #knowledgehook .description{
+	height: 100%;
+}
+#knowledgehook .description#short {
 	height: calc(100% - 200px);
 }
 
 #knowledgehook .description .image {
-	float:right;
-	background-image: url(../Images/Portfolio/knowledgehook/ElementTwo.png);
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
-	max-width: 646px;
-	max-height: 798px;
 	height: 96%;
 	width: 42.5%;
 	padding-top: 5px;
@@ -450,7 +449,43 @@
 	margin-right: 7.5%;
 
 	position: relative;
-	top: 51%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#knowledgehook .description .image#elementone {
+	float:left;
+	margin-right:0px;
+	width:50%;
+	background-image: url(../Images/Portfolio/knowledgehook/ElementOne.jpg);
+}
+
+#knowledgehook .description .image#elementtwo {
+	float:right;
+	background-color:#f3e3ce;
+	margin-right:0px;
+	width:50%;
+	height: 70%;
+	background-image: url(../Images/Portfolio/knowledgehook/ElementTwo.png);
+}
+
+#knowledgehook .description .image#elementthree {
+	float:left;
+	margin-right:0px;
+	width:50%;
+	background-image: url(../Images/Portfolio/knowledgehook/elementthree.png);
+}
+
+#knowledgehook .description .wrapper#elementtwo {
+	float:left;
+	height: 70%;
+	width: calc(42.5% - 1px);
+	margin-left: 7.5%;
+	border: 1px #686868 solid;
+	border-right: none;
+
+	position: relative;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
@@ -466,9 +501,36 @@
 	transform: translateY(-50%);
 }
 
+#knowledgehook .description .wrapper#elementtwo .textBox {
+	float: right;
+	width: 85%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+	line-height: 40px;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#knowledgehook .description .textBox {
+	float: right;
+}
+
+#knowledgehook #coloredBox {
+	position:absolute;
+	bottom: -37px;
+	line-height: 70px;
+	width: 70px;
+	text-align: center;
+
+}
+
 #knowledgehook .description .textBox h2 {
 	color: #c9b59a;
 }
+
+
 
 /************************* Partner Package */
 
@@ -609,25 +671,43 @@
 }
 
 #partnersmeeting .description {
+	height: 100%;
+}
+
+
+#partnersmeeting .description#elementtwo {
 	height: calc(100% - 200px);
 }
 
-#partnersmeeting .description #image {
+#partnersmeeting .description .image {
 	float:left;
 	margin-left: 7.5%;
-	background-image: url(../Images/Portfolio/partnersmeeting/ElementOne.png);
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	display:block;
-	width: 30%;
-	height: 50%;
-	max-width: 693px;
-	max-height: 856px;
-
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+#partnersmeeting .description .image#elementone {
+	background-image: url(../Images/Portfolio/partnersmeeting/ElementOne.png);
+	width: 42.5%;
+	height: 100%;
+}
+
+#partnersmeeting .description .image#elementtwo {
+	float:right;
+	background-image: url(../Images/Portfolio/partnersmeeting/ElementTwo.png);
+	width: 42.5%;
+	height: 100%;
+}
+
+#partnersmeeting .description .image#elementthree {
+	background-image: url(../Images/Portfolio/partnersmeeting/ElementThree.png);
+	width: 42.5%;
+	height: 100%;
 }
 
 #partnersmeeting .description .textBox {
@@ -644,13 +724,42 @@
 
 	position: relative;
 }
+
+#partnersmeeting .description .textBox#elementtwo {
+	float:left;
+	border:none;
+}
+
+
+#partnersmeeting .description .textBox#elementthree {
+	float:right;
+	padding-top: 5%;
+	margin-top:15%;
+	width: 100%;
+	height:80%;
+	border:none;
+
+	top:50%;
+	transform: translateY(-50%);
+}
+
+#partnersmeeting .description .wrapper {
+	float:right;
+	width: 35%;
+	height: 95%;
+	margin-top: 5%;
+	padding-left: 100px;
+	padding-right: 7.5%;
+	border-top: 1px #d2d2d2 solid;
+	border-left: 1px #d2d2d2 solid;
+}
+
 #partnersmeeting #coloredBox {
 	position:absolute;
 	left: -37px;
 	line-height: 70px;
 	width: 70px;
 	text-align: center;
-
 }
 
 #partnersmeeting .description .textBox h2 {
@@ -660,6 +769,34 @@
 
 
 /****************************** Universal */
+
+ul.ComingSoonList {
+	color: #c9b49a;
+	padding-left: 20px;
+}
+
+ul.ComingSoonList li {
+	list-style-type: none;
+}
+
+ul.ComingSoonList #borderLeft {
+	height: 95px;
+    padding-top: 10px;
+    left: 0;
+    position: absolute;
+
+	border-left: 1px solid #c9b49a;
+}
+
+#circle {
+	width: 13px;
+	height: 13px;
+	background: #c9b49a;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	display:inline-block;
+}
 
 #icon_HEADERARROW {
 	position: absolute;
