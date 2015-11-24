@@ -392,6 +392,7 @@
 #impactreport .description .image#elementthree {
 	background-image: url(../Images/Portfolio/impactreport/toc.png);
 	float:left;
+	background-position: left center;
 }
 
 #impactreport .description .textBox#elementthree {
