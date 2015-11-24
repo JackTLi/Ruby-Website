@@ -4,30 +4,59 @@
 	<title>Ruby Cheung</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
 	<link rel="stylesheet" type="text/css" href="styles/animate.css">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 
 
-
 <body>
-	<div class="jumbotron">
-		<div class="nav">
-			<div class="home"><a href="index.html" ><img src="Images/Home/LogoIcon.png"/></a></div>
-			<div class="links">
-				<ul>
-					<li><a href="#portfolio" style="text-decoration:none; color:#fff">PORTFOLIO</a></li>
-					<li><a href="#about" style="text-decoration:none; color:#fff">ABOUT</a></li>
-				</ul>
-			</div>
-		</div>
 
-		<div class="content">
-			<img id="text_UXDESIGNER" src="Images/Home/UxDesigner@High.png" />
+     <div class="navSlider">
+            
+            <ul>
+                  <li class="printMargin" ><h2>PRINT</h2><li>
+                  <li><a class="navSliderLink" id="BBQlink" href ="portfolio.html#BBQ"> FAMILY BBQ </a></li>
+                  <li><a class="navSliderLink" id="impactreportlink" href ="portfolio.html#impactreport"> IMPACT REPORT </a></li>
+                  <li><a class="navSliderLink" id="partnerpackagelink" href ="portfolio.html#partnerpackage"> PARTNER PACKAGE </a></li>
+                  <li><a class="navSliderLink" id="partnermeetinglink"href ="portfolio.html#partnermeeting"> ALL PARTNER MEETING </a></li>
+            </ul>
+            <ul>
+                  <li><h2> WEB</h2></li>
+                  <li><a class="navSliderLink" id="knowledgehooklink"href ="portfolio.html#knowledgehook"> KNOWLEDGE HOOK </a></li>
+            </ul>
+     </div>
+
+     <div class="navBackground">
+     </div>
+
+	<div class="nav">
+		<div class="home"><a href="index.html" ><img src="Images/Home/LogoIcon.png"/></a></div>
+		<div class="links">
+			<ul>				
+				<li><a href="#about" class="sliding-link" style="text-decoration:none; color:#fff;padding-right:50px;" >ABOUT</a></li>
+				<li id="nav-toggle" href="#" style="text-decoration:none; color:#fff"> PORTFOLIO <span></span></li>
+			</ul>
 		</div>
-		<div id ="icon_HEADERARROW"> </div>
+	</div>
+
+	<div class="jumbotron">
+		<div id="fullRes">
+
+
+			<div class="content">
+				<img id="text_UXDESIGNER" src="Images/Home/UxDesigner@High.png" />
+			</div>
+			<a href="#portfolio" class="sliding-link"> <div id ="icon_HEADERARROW"> </div></a>
+		</div>
 	</div>
 
 	<div class="centerPane">
-		<a name="portfolio"></a> 
+		<div id="portfolio"></div>
 		<ul>
 			<li><a href="portfolio.html#BBQ"><img src = "Images/Home/FamilyBbq.png"/></a></li>
 			<li><a href="portfolio.html#impactreport"><img src = "Images/Home/ImpactReport.png"/></a></li>
@@ -38,27 +67,119 @@
 	</div>
 
 	<div class="footer">
-		<a name="about"></a> 
-		<div class="imageHalf">
-			<div class="socialmedia">
-				<ul>
-					<li id="linkedin"><a href="https://ca.linkedin.com/pub/ruby-cheung/41/503/322"><img src="Images/Home/LinkedinIcon.png"/></a></li>
-					<li id="behance"><a href="https://www.behance.net/rubykcheung"><img src="Images/Home/BehanceIcon.png"/></a></li>
-					<li id="mail"><a href="mailto:rkcheung@uwaterloo.ca"><img src="Images/Home/EmailIcon.png"/></a></li>
-				</ul>
+		<div id="about"></div>
+		<div class="topHalf">
+
+			<div class="textBox">
+				<div class="headwrapper">
+					 <div class="letters">R</div>
+					 <div class="letters">U</div>
+					 <div class="letters">B</div>
+					 <div class="letters">Y</div>
+					 <div class="letters">&nbsp;</div>
+					 <div class="letters">C</div>
+					 <div class="letters">H</div>
+					 <div class="letters">E</div>
+					 <div class="letters">U</div>
+					 <div class="letters">N</div>
+					 <div class="letters">G</div>
+					<span class="stretch"></span>
+				</div>
+				<p>
+					I am currently a 4th year student at University of Waterloo. I am studying Global Business and Digital Arts. As a UX designer I am able to design for different platforms, whether it is in a digital form or a physical form. Throughout my portfolio you will see different pieces done in different mediums.
+				</p>
+
+				<div class="socialmediaicons">
+					<ul>
+						<li id="linkedin">
+							<a href="https://ca.linkedin.com/pub/ruby-cheung/41/503/322"><img src="Images/Home/linkedin.png"></a>
+						</li>
+						<li id="behance">
+							<a href="https://www.behance.net/rubykcheung"><img src="Images/Home/behance.png"></a>
+						</li>
+						<li id="mail">
+							<a href="mailto:rkcheung@uwaterloo.ca"><img src="Images/Home/mail.png"></a>
+						</li>
+					</ul>
+				</div>
 			</div>
+
+			<div class="imageBox">
+			</div>
+
 		</div>
 
+		<div class="bottomHalf">
+			<div class="container" id="specialized">
+				<h2 id="mainheader"> I'M SPECIALIZED IN</h2>
+
+				<div class="list-container">
+					<table>
+						<tr>
+							<td>
+								<div class="label" id="responsive">
+									RESPONSIVE
+								</div>
+								<p>
+									I have gained experience through projects that I have done with clients. I have learned fundamentals through courses in my current program and through working with clients on their websites.
+								</p>
+							</td>
+							<td>
+								<div class="label" id="prototyping">
+									PROTOTYPING
+								</div>
+								<p>
+									Prototyping allows UX designers to identify the ele- ments that will be displayed on the page of the screen. It also allows me to change around elements when doing a usability testing on a product.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<div class="label" id="interaction">
+									INTERACTION
+								</div>
+								<p>
+									Interaction design is an important aspect of being an user experience designer because this is how users interact with your product. To produce a good interaction is to create an effective user journey that allows the user to flow through the product fluidly.
+								</p>
+							</td>
+							<td>
+								<div class="label" id="storytelling">
+									STORYTELLING
+								</div>
+								<p>
+									Storytelling Is an important aspect that is necessary in any company's brand. Storytelling allows companies to connect with the audience on an emotional level. This can be done through a collection of written content, videos, pictures, or a mixture of them.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div class="container" id="tools">
+				<h2 id="mainheader"> TOOLS THAT I USE</h2>
+
+				<div class="list-container">
+					<ul>
+						<li id="ai">
+							<a href=""><img src="Images/Home/skills/ai.png"></a>
+						</li>
+						<li id="ps">
+							<a href=""><img src="Images/Home/skills/ps.png"></a>
+						</li>
+						<li id="html5">
+							<a href=""><img src="Images/Home/skills/html5.png"></a>
+						</li>
+						<li id="css3">
+							<a href=""><img src="Images/Home/skills/css3.png"></a>
+						</li>
+						<li id="marvel">
+							<a href=""><img src="Images/Home/skills/marvel.png"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
 
 
-		<div class="textHalf">
-			<div class="RubyCheung">
-			 	<h2> RUBY CHEUNG </h2>
-			 	<p>
-			 		I am currently a 4th year student at University of Waterloo. I am studying Global Business and Digital Arts. As a UX designer I am able to design for different platforms, whether it is in a digital form or a physical form. Therefore, throughout my portfolio you will see different pieces done in different mediums.
-			 	</p>
-			 </div>
-		</div>
 
 		<div class=CopyRight> &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG </div>
 
