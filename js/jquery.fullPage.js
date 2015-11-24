@@ -1747,6 +1747,15 @@
 
             slidesNav.find(ACTIVE_SEL).removeClass(ACTIVE);
             slidesNav.find('li').eq(slideIndex).find('a').addClass(ACTIVE);
+
+            var container = $('.fp-slides');
+            var scrollTo = $('.fp-tableCell');
+
+            container.animate({
+                scrollTop: scrollTo.offset().top - container.offset().top + container.scrollTop()
+            });
+            highlightAppropriateMenuItem();
+
         }
 
         //when resizing the site, we adjust the heights of the sections, slimScroll...
