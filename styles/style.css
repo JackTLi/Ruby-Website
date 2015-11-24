@@ -1,11 +1,15 @@
 /****************************** Portfolio Nav Slider */
 /* Activated by hamburger portfolio menu item*/
 
+.printMargin {
+	margin-top: -16px;
+}
+
 .navSlider {
-	background-color: black;
-	opacity: 0.75;
+	background-color: #404041;
+	opacity: 0.90;
 	position:fixed;
-	width: 400px;
+	width: 308px;
 	height: 100%;
 
 	z-index: 5;
@@ -26,8 +30,9 @@
 
 .navSlider li a {
 	text-decoration: none;	
-	color: #888;
+	color: #a3a4a6;
 	font-size: 17px;
+	letter-spacing: 2.5px;
 }
 
 /* NAVIGATION */
@@ -56,7 +61,7 @@
 }
 
 .nav {
-	font-weight: bold;
+	font-weight: 700;
 	color: #fff;
 	padding-top: 0px;
 	position:fixed;
@@ -309,6 +314,7 @@
 }
 
 .footer .topHalf .textBox p {
+	text-align: justify;
 	line-height: 30px;
 	letter-spacing: 1px;
 }

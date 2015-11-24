@@ -19,12 +19,12 @@ $(document).ready(function() {
 	    var scroll_pos = 400;          
 
 	    if(y_scroll_pos > scroll_pos && !bgVisible) {
-	        $(".navBackground").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0});
+	        $(".navBackground").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 0.9});
 	        bgVisible = true;
 	    }
 	    else if (y_scroll_pos < scroll_pos && bgVisible)
 	    {
-	    	$(".navBackground").css({opacity: 1.0, visibility: "hidden"}).animate({opacity: 0.0});
+	    	$(".navBackground").css({opacity: 0.9, visibility: "hidden"}).animate({opacity: 0.0});
 	    	bgVisible = false;
 	    }
 	})
