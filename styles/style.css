@@ -258,13 +258,12 @@
 
 .footer .topHalf .textBox {
 	color: #848a90;
-	width: calc(40% - 1px);
+	width: calc(40% - 2px);
 	margin-left: 10%;
 	float:left;
 	padding: 5%;
 
 	border: 1px solid #848a90;
-	border-right: none;
 	top: 50%;
 	position:relative;
 	transform: translateY(-50%);
