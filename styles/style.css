@@ -74,7 +74,6 @@
 	position:fixed;
 	right: 0;
 	height: 70px;
-	padding-right: 50px;
 	letter-spacing: 5px;
 	font-size: 25px;
 }
@@ -87,6 +86,7 @@
 	display: inline;
 	padding-left: 50px;
 	cursor:pointer;
+	padding:10px 35px 16px 0px;
 }
 
 #nav-toggle {
@@ -101,7 +101,11 @@
     cursor:pointer;
 }
 
-#nav-toggle { cursor: pointer; padding: 10px 35px 16px 0px; }
+#nav-toggle { 
+	cursor: pointer; 
+	padding: 10px 35px 16px 0px; 
+	padding-right: 75px;
+}
 #nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
   cursor: pointer;
   border-radius: 1px;
