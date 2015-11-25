@@ -13,6 +13,24 @@ $(document).ready(function() {
 	    $('html,body').animate( { scrollTop:$(this.hash).offset().top } , 700);
     } );
 
+    var bgVisible = false;
+
+    $("").scroll( function() {
+    	console.log("scroll");
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos = 400;          
+
+        if(y_scroll_pos > scroll_pos && !bgVisible) {
+            $(".navBackground").css({opacity: 0.0, visibility: "visible"}).animate({opacity: 0.9});
+            bgVisible = true;
+        }
+        else if (y_scroll_pos < scroll_pos && bgVisible)
+        {
+        	$(".navBackground").css({opacity: 0.9, visibility: "hidden"}).animate({opacity: 0.0});
+        	bgVisible = false;
+        }
+    })
+
     document.querySelector( "#nav-toggle" )
       .addEventListener( "click", function() {
         this.classList.toggle( "active" );

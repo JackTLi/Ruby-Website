@@ -37,6 +37,17 @@
 
 
 /****************************** Nav */
+.navBackground {
+	position:fixed;
+	top: 0;
+	width: 100%;
+	height: 76px;
+	background-color: #fff;
+	z-index: 3;
+
+	visibility: hidden;
+}
+
 .nav .home {
 	position: fixed;
 	left: 0;
@@ -172,11 +183,11 @@
 
 
 #BBQ .description {
-	height: 100%;
+	height: 60%
 }
 
 #BBQ .description#short {
-	height: calc(100% - 200px);
+	height: 60%
 }
 
 #BBQ .imageBoxLeft
@@ -217,33 +228,51 @@
 
 #BBQ .description .imageBoxLeft#image1 {
 	background-image: url(../Images/Portfolio/BBQ/ComputerPicture.png);
+	height: 85%;
+	max-height: none;
+	max-width: none;
+	margin-left: 0;
+	width: 42.5%;
 }
 
 #BBQ .description .imageBoxRight#image2 {
 	background-image: url(../Images/Portfolio/BBQ/tablet.png);
+	margin-right: 0;
+	max-height: none;
+	max-width: none;
+	width: 50%;
+	height: 80%;
 }
 
 #BBQ .description .imageBoxLeft#image3 {
 	background-image: url(../Images/Portfolio/BBQ/live.png);
+	max-height: none;
+	max-width:none;
+	margin-left: 0;
+	width: 50%;
+	height: 90%;
 }
 
 #BBQ .description .textBoxRight {
 
+	color: #8d8f92;
 	float:right;
-	width: 35%;
-	height: 60%;
-	padding-left: 100px;
+	width: calc(35% - 1px);
+	height: auto;
+	padding-bottom:  100px;
+	padding-left: 7.5%;
 	padding-right: 7.5%;
 	line-height: 40px;
 	border-left: 1px #d2d2d2 solid;
 	border-bottom: 1px #686868 solid;
-	padding-top: 250px;
+	padding-top: 150px;
 
 	position: relative;
 }
 
 #BBQ .description .textBoxLeft {
 	top:50%;
+	color: #8d8f92;
 	transform: translateY(-50%);
 	float:left;
 	width: 35%;
@@ -296,16 +325,16 @@
 }
 
 #impactreport .description#elementone {
-	height: 100%;
+	height: calc(60% - 100px);
 	/*max-height: 885px;*/
 }
 
 #impactreport .description#elementtwo {
-	height: calc(100% - 200px);
+	height: 60%
 }
 
 #impactreport .description#elementthree {
-	height: 100%;
+	height: 60%
 	/*max-height: 885px;*/
 }
 
@@ -314,8 +343,8 @@
 	overflow:hidden;
 	max-width: 1264px;
 	max-height: 885px;
-	height: 100%;
-	width: 49%;
+	height: 80%;
+	width: 50%;
 
 	position: relative;
 	top: 50%;
@@ -327,7 +356,12 @@
 	width:calc(100% + 125px);
 }
 
-#impactreport .description .image {
+#impactreport .spacer {
+	width:100%;
+	height: 100px;
+}
+
+#impactreport .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -357,9 +391,12 @@
 }
 
 
-#impactreport .description .image#elementone {
+#impactreport .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/impactreport/ElementOne.jpg);
 	float:left;
+    background-position: left center;
+    height: 100%;
+
 }
 
 #impactreport .description .textBox#elementone {
@@ -368,18 +405,18 @@
 
 #impactreport .description .wrapper#elementtwo {
 	float:left;
-	height: 70%;
-	width: 35%;
+	height: 80%;
+	width: calc(42.5% - 1px);
 	margin-left: 7.5%;
-	margin-right: 7.5%;
 	border: 1px #686868 solid;
+	border-right: none;
 
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
 }
 
-#impactreport .description .image#elementtwo {
+#impactreport .description .imageBox#elementtwo {
 	float:right;
 	background-image: url(../Images/Portfolio/impactreport/ElementTwo.png);
 }
@@ -389,7 +426,7 @@
 
 }
 
-#impactreport .description .image#elementthree {
+#impactreport .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/impactreport/toc.png);
 	float:left;
 	background-position: left center;
@@ -433,13 +470,13 @@
 }
 
 #knowledgehook .description{
-	height: 100%;
+	height: 60%;
 }
 #knowledgehook .description#short {
-	height: calc(100% - 200px);
+	height: 60%;
 }
 
-#knowledgehook .description .image {
+#knowledgehook .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -454,14 +491,15 @@
 	transform: translateY(-50%);
 }
 
-#knowledgehook .description .image#elementone {
+#knowledgehook .description .imageBox#elementone {
 	float:left;
 	margin-right:0px;
 	width:50%;
+	background-position: left center;
 	background-image: url(../Images/Portfolio/knowledgehook/ElementOne.jpg);
 }
 
-#knowledgehook .description .image#elementtwo {
+#knowledgehook .description .imageBox#elementtwo {
 	float:right;
 	background-color:#f3e3ce;
 	margin-right:0px;
@@ -470,10 +508,11 @@
 	background-image: url(../Images/Portfolio/knowledgehook/ElementTwo.png);
 }
 
-#knowledgehook .description .image#elementthree {
+#knowledgehook .description .imageBox#elementthree {
 	float:left;
 	margin-right:0px;
 	width:50%;
+	    background-position: left;
 	background-image: url(../Images/Portfolio/knowledgehook/elementthree.png);
 }
 
@@ -549,20 +588,20 @@
 }
 
 #partnerpackage .description#elementone{
-	height: 100%;
+	height: 60%;
 	/*max-height: 885px;*/
 }
 
 #partnerpackage .description#elementtwo {
-	height: calc(100% - 200px);
+	height: 60%;
 }
 
 #partnerpackage .description#elementthree{
-	height: 100%;
+	height: 60%;
 	/*max-height: 885px;*/
 }
 
-#partnerpackage .description .image {
+#partnerpackage .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -581,8 +620,8 @@
 	overflow:hidden;
 	max-width: 1264px;
 	max-height: 885px;
-	height: 100%;
-	width: 49%;
+	height: 80%;
+	width: 50%;
 
 	position: relative;
 	top: 50%;
@@ -612,8 +651,9 @@
 }
 
 
-#partnerpackage .description .image#elementone {
+#partnerpackage .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/partnerpackage/ElementOne.jpg);
+	background-position: left center;
 	float:left;
 }
 
@@ -623,11 +663,11 @@
 
 #partnerpackage .description .wrapper#elementtwo {
 	float:left;
-	height: 70%;
-	width: 35%;
+	height: 80%;
+	width: calc(42.5% - 1px);
 	margin-left: 7.5%;
-	margin-right: 7.5%;
 	border: 1px #686868 solid;
+	border-right: none;
 
 	position: relative;
 	top: 50%;
@@ -636,15 +676,17 @@
 
 #partnerpackage .description .textBox#elementtwo {
 	width: auto;
-
 }
 
-#partnerpackage .description .image#elementthree {
+#partnerpackage .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/partnerpackage/ipad.png);
 	float:left;
 }
 
 #partnerpackage .description .textBox#elementthree {
+	margin-right: 7.5%;
+	margin-left: 0;
+	width: 42.5%;
 	float:right;
 }
 
@@ -672,15 +714,15 @@
 }
 
 #partnersmeeting .description {
-	height: 100%;
+	height: 60%;
 }
 
 
 #partnersmeeting .description#elementtwo {
-	height: calc(100% - 200px);
+	height: 60%;
 }
 
-#partnersmeeting .description .image {
+#partnersmeeting .description .imageBox {
 	float:left;
 	margin-left: 7.5%;
 	background-size:contain;
@@ -692,20 +734,23 @@
 	transform: translateY(-50%);
 }
 
-#partnersmeeting .description .image#elementone {
+#partnersmeeting .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementOne.png);
 	width: 42.5%;
 	height: 100%;
+	margin-left:0;
 }
 
-#partnersmeeting .description .image#elementtwo {
+#partnersmeeting .description .imageBox#elementtwo {
 	float:right;
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementTwo.png);
-	width: 42.5%;
-	height: 100%;
+	width: 45%;
+	margin-right: 3.75%;
+	margin-left: 3.75%;
+	height: 80%;
 }
 
-#partnersmeeting .description .image#elementthree {
+#partnersmeeting .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementThree.png);
 	width: 42.5%;
 	height: 100%;
@@ -714,7 +759,7 @@
 #partnersmeeting .description .textBox {
 
 	float:right;
-	width: 35%;
+	width: calc(42.5% - 110px);
 	height: 60%;
 	padding-left: 100px;
 	padding-right: 7.5%;
@@ -726,19 +771,54 @@
 	position: relative;
 }
 
+#partnersmeeting .description .textBox .text {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#partnersmeeting .description .textBox#elementone {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	height: calc(100% - 1px);
+}
+
 #partnersmeeting .description .textBox#elementtwo {
 	float:left;
 	border:none;
+	padding-top: 0px;
+	top: 50%;
+	height: auto;
+	margin-top: 0;
+    width: calc(42.5% - 150px);
+    padding-right:0;
+    padding-left:0;
+    margin-left: 150px;
+	transform: translateY(-50%);
+}
+#partnerpackage .description .wrapper#elementtwo {
+	float:left;
+	height: 70%;
+	width: calc(42.5% - 1px);
+	margin-left: 7.5%;
+	border: 1px #686868 solid;
+	border-right: none;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 
 #partnersmeeting .description .textBox#elementthree {
 	float:right;
-	padding-top: 5%;
-	margin-top:15%;
-	width: 100%;
-	height:80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: calc(35% - 102px);
+	height:100%;
 	border:none;
+	border: 1px #d2d2d2 solid;
+	border-right: none;
 
 	top:50%;
 	transform: translateY(-50%);
@@ -746,7 +826,7 @@
 
 #partnersmeeting .description .wrapper {
 	float:right;
-	width: 35%;
+	width: calc(42.5% - 102px);
 	height: 95%;
 	margin-top: 5%;
 	padding-left: 100px;
@@ -761,6 +841,9 @@
 	line-height: 70px;
 	width: 70px;
 	text-align: center;
+
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #partnersmeeting .description .textBox h2 {
@@ -769,11 +852,104 @@
 
 
 
+
+
 /****************************** Universal */
+
+@media screen and (max-width: 1300px) {
+	.textBoxLeft {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.textBoxRight {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.textBox {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.imageBoxRight {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+	}
+	.imageBoxLeft {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+	}
+	.imageBox {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.description .issuuContainer {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.description .wrapper#elementtwo {
+		border: none !important;
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	}
+
+	#coloredBox {
+		visibility: hidden;
+	}
+}
 
 ul.ComingSoonList {
 	color: #c9b49a;
-	padding-left: 20px;
+	letter-spacing: 5px;
+	line-height: 30px;
+	text-align: right;
 }
 
 ul.ComingSoonList li {
@@ -823,6 +999,18 @@ ul.ComingSoonList #borderLeft {
 	padding-top: 50px;
 }
 
+.textBox {
+	text-align: justify;
+}
+
+.textBoxRight {
+	text-align: justify;
+}
+
+.textBoxLeft {
+	text-align: justify;
+}
+
 
 .footer ul li {
 	float:left;
@@ -842,9 +1030,11 @@ html{
 	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  }
 body{
+	color: #8d8f92;
 	margin: 0;
 	height: 100%;
+	font-size: 17px;
  	min-height:100%;
  	overflow-y: scroll;
-overflow-x: hidden;
+	overflow-x: hidden;
  }
