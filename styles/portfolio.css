@@ -857,6 +857,15 @@
 /****************************** Universal */
 
 @media screen and (max-width: 1300px) {
+
+	.description {
+		height: 80% !important;
+	}
+
+	#impactreport .description#elementone {
+		height: calc(80% - 100px) !important;
+	}
+
 	.textBoxLeft {
 		height: 50% !important;
 		width: 90% !important;
