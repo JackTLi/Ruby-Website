@@ -258,16 +258,23 @@
 	color: #8d8f92;
 	float:right;
 	width: calc(35% - 1px);
-	height: auto;
-	padding-bottom:  90px;
+	height: calc(100% - 1px);
+	padding-bottom:  0px;
 	padding-left: 7.5%;
 	padding-right: 7.5%;
 	line-height: 40px;
 	border-left: 1px #d2d2d2 solid;
 	border-bottom: 1px #686868 solid;
-	padding-top: 90px;
+	padding-top: 0px;
 
 	position: relative;
+}
+
+#BBQ .description .textBoxRight .text {
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #BBQ .description .textBoxLeft {
