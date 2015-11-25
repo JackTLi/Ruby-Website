@@ -259,13 +259,13 @@
 	float:right;
 	width: calc(35% - 1px);
 	height: auto;
-	padding-bottom:  100px;
+	padding-bottom:  90px;
 	padding-left: 7.5%;
 	padding-right: 7.5%;
 	line-height: 40px;
 	border-left: 1px #d2d2d2 solid;
 	border-bottom: 1px #686868 solid;
-	padding-top: 150px;
+	padding-top: 0px;
 
 	position: relative;
 }
@@ -856,7 +856,7 @@
 
 /****************************** Universal */
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1000px) {
 
 	.description {
 		height: 80% !important;
