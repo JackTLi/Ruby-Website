@@ -280,6 +280,8 @@
 
 .footer .topHalf .textBox .socialmediaicons img {
 	display: inline-block;
+	width: 55px;
+	height: 55px;
 }
 
 .footer .topHalf .textBox .socialmediaicons ul {
@@ -288,7 +290,7 @@
 .footer .topHalf .textBox .socialmediaicons li {
 	list-style-type: none;
 	display: inline;
-	padding-right: 40px;
+	padding-right: 25px;
 }
 
 .footer .topHalf .textBox .headwrapper {
@@ -377,7 +379,7 @@
 .footer .bottomHalf .container .list-container .label {
 	float:left;
 	font-weight:bold;
-	font-size: 2.5vw;
+	font-size: 2vw;
 	line-height: 3vw;
 	letter-spacing: 6px;
 	width: 100%;
@@ -477,6 +479,7 @@ html{
 	 font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  }
 body{
+	font-size: 17px;
 	margin: 0;
 	height: 100%;
  	min-height:100%;
