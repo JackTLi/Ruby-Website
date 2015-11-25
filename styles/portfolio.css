@@ -869,6 +869,7 @@
 		margin-left: 5% !important;
 		margin-right: 5% !important;
 		border: none !important;
+		font-size: 25px !important;
 	}
 	.textBoxRight {
 		height: 50% !important;
@@ -882,6 +883,7 @@
 		margin-left: 5% !important;
 		margin-right: 5% !important;
 		border: none !important;
+		font-size: 25px !important;
 	}
 	.textBox {
 		height: 50% !important;
@@ -895,6 +897,7 @@
 		margin-left: 5% !important;
 		margin-right: 5% !important;
 		border: none !important;
+		font-size: 25px !important;
 	}
 	.imageBoxRight {
 		height: 50% !important;
@@ -938,6 +941,7 @@
 		top: initial !important;
 		margin-left: 5% !important;
 		margin-right: 5% !important;
+		font-size: 25px !important;
 	}
 
 	#coloredBox {
