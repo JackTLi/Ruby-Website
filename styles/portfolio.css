@@ -361,7 +361,7 @@
 	height: 100px;
 }
 
-#impactreport .description .image {
+#impactreport .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -391,7 +391,7 @@
 }
 
 
-#impactreport .description .image#elementone {
+#impactreport .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/impactreport/ElementOne.jpg);
 	float:left;
     background-position: left center;
@@ -416,7 +416,7 @@
 	transform: translateY(-50%);
 }
 
-#impactreport .description .image#elementtwo {
+#impactreport .description .imageBox#elementtwo {
 	float:right;
 	background-image: url(../Images/Portfolio/impactreport/ElementTwo.png);
 }
@@ -426,7 +426,7 @@
 
 }
 
-#impactreport .description .image#elementthree {
+#impactreport .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/impactreport/toc.png);
 	float:left;
 	background-position: left center;
@@ -476,7 +476,7 @@
 	height: 60%;
 }
 
-#knowledgehook .description .image {
+#knowledgehook .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -491,14 +491,15 @@
 	transform: translateY(-50%);
 }
 
-#knowledgehook .description .image#elementone {
+#knowledgehook .description .imageBox#elementone {
 	float:left;
 	margin-right:0px;
 	width:50%;
+	background-position: left center;
 	background-image: url(../Images/Portfolio/knowledgehook/ElementOne.jpg);
 }
 
-#knowledgehook .description .image#elementtwo {
+#knowledgehook .description .imageBox#elementtwo {
 	float:right;
 	background-color:#f3e3ce;
 	margin-right:0px;
@@ -507,10 +508,11 @@
 	background-image: url(../Images/Portfolio/knowledgehook/ElementTwo.png);
 }
 
-#knowledgehook .description .image#elementthree {
+#knowledgehook .description .imageBox#elementthree {
 	float:left;
 	margin-right:0px;
 	width:50%;
+	    background-position: left;
 	background-image: url(../Images/Portfolio/knowledgehook/elementthree.png);
 }
 
@@ -599,7 +601,7 @@
 	/*max-height: 885px;*/
 }
 
-#partnerpackage .description .image {
+#partnerpackage .description .imageBox {
 	background-size:contain;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -649,8 +651,9 @@
 }
 
 
-#partnerpackage .description .image#elementone {
+#partnerpackage .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/partnerpackage/ElementOne.jpg);
+	background-position: left center;
 	float:left;
 }
 
@@ -673,10 +676,9 @@
 
 #partnerpackage .description .textBox#elementtwo {
 	width: auto;
-
 }
 
-#partnerpackage .description .image#elementthree {
+#partnerpackage .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/partnerpackage/ipad.png);
 	float:left;
 }
@@ -720,7 +722,7 @@
 	height: 60%;
 }
 
-#partnersmeeting .description .image {
+#partnersmeeting .description .imageBox {
 	float:left;
 	margin-left: 7.5%;
 	background-size:contain;
@@ -732,14 +734,14 @@
 	transform: translateY(-50%);
 }
 
-#partnersmeeting .description .image#elementone {
+#partnersmeeting .description .imageBox#elementone {
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementOne.png);
 	width: 42.5%;
 	height: 100%;
 	margin-left:0;
 }
 
-#partnersmeeting .description .image#elementtwo {
+#partnersmeeting .description .imageBox#elementtwo {
 	float:right;
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementTwo.png);
 	width: 45%;
@@ -748,7 +750,7 @@
 	height: 80%;
 }
 
-#partnersmeeting .description .image#elementthree {
+#partnersmeeting .description .imageBox#elementthree {
 	background-image: url(../Images/Portfolio/partnersmeeting/ElementThree.png);
 	width: 42.5%;
 	height: 100%;
@@ -853,6 +855,95 @@
 
 
 /****************************** Universal */
+
+@media screen and (max-width: 1300px) {
+	.textBoxLeft {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.textBoxRight {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.textBox {
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+		border: none !important;
+	}
+	.imageBoxRight {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+	}
+	.imageBoxLeft {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+	}
+	.imageBox {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.description .issuuContainer {
+		height: 50% !important;
+		width: 100% !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.description .wrapper#elementtwo {
+		border: none !important;
+		height: 50% !important;
+		width: 90% !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		transform: none !important;
+		top: initial !important;
+		margin-left: 5% !important;
+		margin-right: 5% !important;
+	}
+
+	#coloredBox {
+		visibility: hidden;
+	}
+}
 
 ul.ComingSoonList {
 	color: #c9b49a;
