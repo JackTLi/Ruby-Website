@@ -257,10 +257,10 @@
 
 	color: #8d8f92;
 	float:right;
-	width: 35%;
+	width: calc(35% - 1px);
 	height: auto;
 	padding-bottom:  100px;
-	padding-left: 100px;
+	padding-left: 7.5%;
 	padding-right: 7.5%;
 	line-height: 40px;
 	border-left: 1px #d2d2d2 solid;
