@@ -714,7 +714,7 @@
 #partnersmeeting .description .textBox {
 
 	float:right;
-	width: 35%;
+	width: calc(42.5% - 110px);
 	height: 60%;
 	padding-left: 100px;
 	padding-right: 7.5%;
@@ -729,16 +729,23 @@
 #partnersmeeting .description .textBox#elementtwo {
 	float:left;
 	border:none;
+	padding-top: 0px;
+	top: 50%;
+	height: auto;
+	margin-top: 0;
+	transform: translateY(-50%);
 }
 
 
 #partnersmeeting .description .textBox#elementthree {
 	float:right;
-	padding-top: 5%;
-	margin-top:15%;
-	width: 100%;
-	height:80%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: calc(35% - 102px);
+	height:auto;
 	border:none;
+	border: 1px #d2d2d2 solid;
+	border-right: none;
 
 	top:50%;
 	transform: translateY(-50%);
@@ -746,7 +753,7 @@
 
 #partnersmeeting .description .wrapper {
 	float:right;
-	width: 35%;
+	width: calc(42.5% - 102px);
 	height: 95%;
 	margin-top: 5%;
 	padding-left: 100px;
