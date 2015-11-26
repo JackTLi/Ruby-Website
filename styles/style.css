@@ -185,6 +185,7 @@
 	position:absolute;
 	transform: translateX(-50%);
 	top: 20%;
+	opacity: 0.9;
 	width: 600px;
  	vertical-align: middle;
 }
