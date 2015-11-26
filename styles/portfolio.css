@@ -330,7 +330,7 @@
 }
 
 #impactreport .description#elementone {
-	height: calc(60% - 100px);
+	height: 60%
 	/*max-height: 885px;*/
 }
 
@@ -867,10 +867,6 @@
 		height: 80% !important;
 	}
 
-	#impactreport .description#elementone {
-		height: calc(80% - 100px) !important;
-	}
-
 	.textBoxLeft {
 		height: 50% !important;
 		width: calc(100% - 200px)  !important;
@@ -959,12 +955,19 @@
 	}
 
 	#coloredBox {
-		visibility: hidden;
+		display:none;
+	}
+
+	.fp-controlArrow.fp-prev {
+		display:none;
+	}
+	.fp-controlArrow.fp-next {
+		display:none;
 	}
 }
 
 .jumbotron {
-	height: calc(100% - 76px);
+	height: calc(100% - 76px) !important;
 }
 
 .jumbotronspacer {
