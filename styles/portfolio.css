@@ -406,7 +406,7 @@
 	background-image: url(../Images/Portfolio/impactreport/ElementOne.jpg);
 	float:left;
     background-position: left center;
-    height: 100%;
+    height: 80%;
 
 }
 
@@ -430,6 +430,9 @@
 #impactreport .description .imageBox#elementtwo {
 	float:right;
 	background-image: url(../Images/Portfolio/impactreport/ElementTwo.png);
+	background-position: left center;
+    width: 50%;
+    height: 80%;
 }
 
 #impactreport .description .textBox#elementtwo {
@@ -666,6 +669,7 @@
 	background-image: url(../Images/Portfolio/partnerpackage/ElementOne.jpg);
 	background-position: left center;
 	float:left;
+	height: 80%;
 }
 
 #partnerpackage .description .textBox#elementone {
@@ -809,7 +813,7 @@
 }
 #partnerpackage .description .wrapper#elementtwo {
 	float:left;
-	height: 70%;
+	height: 80%;
 	width: calc(42.5% - 1px);
 	margin-left: 7.5%;
 	border: 1px #686868 solid;
@@ -960,6 +964,25 @@
 		font-size: 25px !important;
 	}
 
+	#impactreport .imageBox#elementone {
+		height: 35% !important;
+		background-position: center center !important;
+	}
+	#impactreport .imageBox#elementtwo {
+		height: 35% !important;
+		background-position: center center !important;
+	}
+
+	#partnerpackage .imageBox#elementone{
+		height: 35% !important;
+		background-position: center center !important;
+	}
+
+	#knowledgehook .imageBox#elementone {
+		height: 35% !important;
+		background-position: center center !important;
+	}
+
 	#coloredBox {
 		display:none;
 	}
@@ -969,6 +992,11 @@
 	}
 	.fp-controlArrow.fp-next {
 		display:none;
+	}
+
+	.sevenpointfivepercentbox {
+		height: 7.5%;
+		width: 100%;
 	}
 }
 
