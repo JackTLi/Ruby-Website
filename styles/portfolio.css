@@ -44,8 +44,6 @@
 	height: 76px;
 	background-color: #fff;
 	z-index: 3;
-
-	visibility: hidden;
 }
 
 .nav .home {
@@ -169,7 +167,8 @@
 
 /************************* BBQ */
 #BBQ .jumbotron {
-	background-image: url(../Images/Portfolio/BBQ/HeaderPicture.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,1)), url(../Images/Portfolio/BBQ/HeaderPicture.jpg); 
+
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -254,7 +253,6 @@
 }
 
 #BBQ .description .textBoxRight {
-
 	color: #8d8f92;
 	float:right;
 	width: calc(35% - 1px);
@@ -319,7 +317,7 @@
 /************************* Impact Report */
 
 #impactreport .jumbotron {
-	background-image: url(../Images/Portfolio/impactreport/jumbotron.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,1)), url(../Images/Portfolio/impactreport/jumbotron.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -464,7 +462,7 @@
 }
 
 #knowledgehook .jumbotron {
-	background-image: url(../Images/Portfolio/knowledgehook/HeaderPicture.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,1)), url(../Images/Portfolio/knowledgehook/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -582,7 +580,7 @@
 /************************* Partner Package */
 
 #partnerpackage .jumbotron {
-	background-image: url(../Images/Portfolio/partnerpackage/jumbotron.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,1)), url(../Images/Portfolio/partnerpackage/jumbotron.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -708,7 +706,7 @@
 
 /************************* Partners Meeting */
 #partnersmeeting .jumbotron {
-	background-image: url(../Images/Portfolio/partnersmeeting/HeaderPicture.jpg);
+	background-image: linear-gradient(to top, rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,1)), url(../Images/Portfolio/partnersmeeting/HeaderPicture.jpg);
 	background-repeat: no-repeat;
 	background-color: black;
 	background-position: center center;
@@ -963,6 +961,15 @@
 	#coloredBox {
 		visibility: hidden;
 	}
+}
+
+.jumbotron {
+	height: calc(100% - 76px);
+}
+
+.jumbotronspacer {
+	width: 100%;
+	height: 76px;
 }
 
 ul.ComingSoonList {
