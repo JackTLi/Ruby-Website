@@ -146,21 +146,27 @@
 }
 
 .fp-controlArrow.fp-prev {
-	background-image: url(../Images/Shared/Arrow_left.png);
+	background-image: url(../Images/Shared/Arrow_left2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 0 !important;
 	width: 70px !important;
 	height: 70px !important;
+	opacity: 0.7;
+/*	top: initial;
+    bottom: 15px !important;*/
 }
 .fp-controlArrow.fp-next {
-	background-image: url(../Images/Shared/Arrow_right.png);
+	background-image: url(../Images/Shared/Arrow_right2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	border: 0 !important;
 	width: 70px !important;
 	height: 70px !important;
 	padding-right: 15px;
+	opacity: 0.7;
+	/*top: initial;
+	bottom: 15px !important;*/
 }
 
 
