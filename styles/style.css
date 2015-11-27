@@ -244,9 +244,9 @@
 	top: 0;
 	width: 460px;
 	opacity:0;
-	font-size: 3vw;
+	font-size: 50px;
     font-weight: bold;
-    letter-spacing: 0.7vw;
+    letter-spacing: 5px;
 }
 
 .centerPane span.hovercover span {
