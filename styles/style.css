@@ -244,9 +244,10 @@
 	top: 0;
 	width: 460px;
 	opacity:0;
-	font-size: 50px;
+	font-size: 35px;
     font-weight: bold;
-    letter-spacing: 5px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
 .centerPane span.hovercover span {
@@ -515,4 +516,5 @@ body{
 	margin: 0;
 	height: 100%;
  	min-height:100%;
+ 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  }
