@@ -248,6 +248,10 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 10px;
+    	-webkit-transition: opacity 300ms;
+	 -moz-transition: opacity 300ms;
+	 -o-transition: opacity 300ms;
+	 transition: opacity 300ms;
 }
 
 .centerPane span.hovercover span {
@@ -258,6 +262,10 @@
 
 .centerPane li:hover span.hovercover {
 	opacity:1;
+	-webkit-transition: opacity 300ms;
+	 -moz-transition: opacity 300ms;
+	 -o-transition: opacity 300ms;
+	 transition: opacity 300ms;
 }
 
 @media screen and (max-width: 2000px) {
