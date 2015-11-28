@@ -884,6 +884,18 @@
 
 /****************************** Universal */
 
+.textBoxLeft {
+	line-height: 3vh !important;
+}
+
+.textBoxRight {
+	line-height: 3vh !important;
+}
+
+.textBox {
+	line-height: 3vh !important;
+}
+
 @media screen and (max-width: 1000px) {
 
 	.description {
