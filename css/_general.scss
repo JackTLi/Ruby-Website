@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Proxima;
+    src: url(../fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(../fonts/ProximaNova-Thin.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Proxima;
+    src: url(../fonts/ProximaNova-Sbold.otf);
+    font-weight: bold;
+}
+
+$font-stack: Proxima, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+$break-small: 320px;
+$break-large: 1200px;
+$break-xlarge: 2300px;
+
+$primary-accent: #e8dcd1;
+$title-box-color: #fffffe;
+$font-color: #aeb0b2;
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  font-size: 19px;
+  color: $font-color;
+  overflow-x:hidden;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.full-width {
+  width: 100vw;
+}
+
+.content-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $break-large;
+  width: 100%;
+}
+
+.horizontally-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}

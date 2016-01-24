@@ -1,0 +1,27 @@
+{
+  "name": "rubycheung",
+  "version": "3.0.0",
+  "description": "Third revision of portfolio site for ruby cheung",
+  "main": "index.js",
+  "dependencies": {
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "runtest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JackTLi/RubyCheungV3"
+  },
+  "keywords": [
+    "ruby",
+    "cheung"
+  ],
+  "author": "Jack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JackTLi/RubyCheungV3/issues"
+  },
+  "homepage": "https://github.com/JackTLi/RubyCheungV3#readme"
+}

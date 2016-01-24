@@ -1,0 +1,41 @@
+#headerSplash {
+  background-image: url('../images/header.jpg');
+  background-size:cover;
+  background-position: center center;
+}
+
+.header-text {
+  position: relative;
+  top: 250px;
+}
+
+img.header-label {
+  width: 450px;
+}
+
+@media screen and (max-width: $break-xlarge) {
+  .header-text {
+    top: 200px;
+  }
+  img.header-label {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  .header-text {
+    left: 25px;
+    top: 90px;
+  }
+  img.header-label {
+    width: 250px;
+  }
+}
+
+.header-arrow {
+  position: absolute;
+  bottom: 20px;
+  img {
+    width: 50px;
+  }
+}

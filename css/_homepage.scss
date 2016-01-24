@@ -1,0 +1,65 @@
+@media screen and (max-width: $break-large) {
+  .header-arrow {
+    bottom: 15px;
+    img {
+      width: 30px;
+    }
+  }
+}
+
+.home-section {
+  margin-top: 100px;
+}
+
+#why {
+  label {
+    font-size: 50px;
+    letter-spacing: 10px;
+  }
+}
+
+.imageBox {
+  label {
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.textBox {
+  label {
+    font-weight: 100;
+    position: relative;
+    left: 20px;
+    top: 20px;
+  }
+
+  .content {
+    margin-top: 50px;
+
+    p {
+      letter-spacing: 1px;
+      text-align: justify;
+
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+}
+
+.why-box {
+  color: $title-box-color;
+  height: 400px;
+  background-image: url('../images/bike_flipped.jpg');
+  background-size: cover;
+  width: 60%;
+  position: relative;
+}
+
+.why-text {
+  width: 40%;
+  height: 400px;
+  overflow-y: hidden;
+  position: relative;
+}

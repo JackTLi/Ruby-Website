@@ -1,0 +1,142 @@
+/* mixins */
+/* general */
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNova-Light.otf); }
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNova-Thin.otf);
+  font-weight: 100; }
+@font-face {
+  font-family: Proxima;
+  src: url(../fonts/ProximaNova-Sbold.otf);
+  font-weight: bold; }
+body {
+  margin: 0;
+  font-family: Proxima, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 19px;
+  color: #aeb0b2;
+  overflow-x: hidden; }
+
+.full-height {
+  height: 100vh; }
+
+.full-width {
+  width: 100vw; }
+
+.content-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%; }
+
+.horizontally-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/* text */
+/* nav */
+.nav {
+  position: fixed;
+  vertical-align: middle;
+  width: calc(100% - 50px);
+  height: 140px;
+  line-height: 140px;
+  z-index: 2; }
+  .nav .logo img {
+    vertical-align: middle;
+    height: 70px; }
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    height: 80px;
+    line-height: 80px; }
+    .nav .logo img {
+      height: 40px;
+      position: relative; } }
+/* homeheader */
+#headerSplash {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+.header-text {
+  position: relative;
+  top: 250px; }
+
+img.header-label {
+  width: 450px; }
+
+@media screen and (max-width: 2300px) {
+  .header-text {
+    top: 200px; }
+
+  img.header-label {
+    width: 350px; } }
+@media screen and (max-width: 1200px) {
+  .header-text {
+    left: 25px;
+    top: 90px; }
+
+  img.header-label {
+    width: 250px; } }
+.header-arrow {
+  position: absolute;
+  bottom: 20px; }
+  .header-arrow img {
+    width: 50px; }
+
+/* homepage */
+@media screen and (max-width: 1200px) {
+  .header-arrow {
+    bottom: 15px; }
+    .header-arrow img {
+      width: 30px; } }
+.home-section {
+  margin-top: 100px; }
+
+#why label {
+  font-size: 50px;
+  letter-spacing: 10px; }
+
+.imageBox label {
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 20px; }
+
+.textBox label {
+  font-weight: 100;
+  position: relative;
+  left: 20px;
+  top: 20px; }
+.textBox .content {
+  margin-top: 50px; }
+  .textBox .content p {
+    letter-spacing: 1px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px; }
+
+.why-box {
+  color: #fffffe;
+  height: 400px;
+  background-image: url("../images/bike_flipped.jpg");
+  background-size: cover;
+  width: 60%;
+  position: relative; }
+
+.why-text {
+  width: 40%;
+  height: 400px;
+  overflow-y: hidden;
+  position: relative; }
+
+/*# sourceMappingURL=site.css.map */
