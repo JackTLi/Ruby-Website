@@ -100,10 +100,9 @@ img.header-label {
       width: 30px; } }
 .home-section {
   margin-top: 100px; }
-
-.home-section label {
-  font-size: 50px;
-  letter-spacing: 10px; }
+  .home-section label {
+    font-size: 50px;
+    letter-spacing: 10px; }
 
 .imageBox {
   position: relative; }
@@ -148,6 +147,74 @@ img.header-label {
   background-position: top center; }
 
 .who-text {
-  width: 60%; }
+  width: 60%;
+  height: 300px;
+  overflow-y: hidden;
+  position: relative; }
+
+.what-banner {
+  width: 100%;
+  height: 400px;
+  position: relative; }
+  .what-banner label {
+    font-weight: 100; }
+  .what-banner .ido {
+    position: absolute;
+    left: calc(20% + 220px);
+    bottom: 5px; }
+  .what-banner img.ipad {
+    position: absolute;
+    height: 75%;
+    left: -50px;
+    bottom: 0; }
+  .what-banner .what-box {
+    height: 330px;
+    width: 80%;
+    background-image: url("../images/what-banner.jpg");
+    background-size: cover;
+    position: relative; }
+    .what-banner .what-box label {
+      position: absolute;
+      font-weight: bold;
+      color: #fffffe;
+      left: 200px;
+      bottom: 5px; }
+
+.what-content .icon {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px; }
+.what-content h2 {
+  font-weight: normal;
+  color: #e1d0c2;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 0px; }
+.what-content .seperator {
+  position: relative;
+  left: 50%;
+  height: 1px;
+  transform: translateX(-50%); }
+.what-content .item {
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: justify;
+  height: 300px;
+  overflow-y: hidden;
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 50px; }
+
+.copyright {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 12px;
+  font-weight: 100;
+  color: #e1d0c2;
+  text-align: center; }
 
 /*# sourceMappingURL=site.css.map */

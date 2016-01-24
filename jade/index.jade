@@ -1,84 +1,136 @@
 doctype html
 html(lang="en")
 
-head
-	meta(charset="UTF-8")
-	meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
-	meta(name="viewport", content="width=device-width", initial-scale="1")
-	title Ruby Cheung
-	link(rel='stylesheet', href='css/site.css', type='text/css' )
-	script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-	script(type='text/javascript' src='js/main.js')
-  
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content="width=device-width", initial-scale="1")
+		title Ruby Cheung
+		link(rel='stylesheet', href='css/site.css', type='text/css')
+		script(type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(type='text/javascript' src='js/main.js')
+		
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		link(rel="icon", href="favicon.ico", type="image/x-icon")  	
 
-body
-	div.horizontally-center.full-width.nav
-		a.logo(href="#")
-			img(src="images/logo.png")
+	body
+		div.horizontally-center.full-width.nav
+			a.logo(href="#")
+				img(src="images/logo.png")
 
-	section.full-width.full-height#headerSplash
-		div.header-text.content-width
-			img.header-label(src="images/UxDesigner.png")
-    
-		a.horizontally-center.header-arrow.sliding-link(href="#whyabike")
-			img(src="images/header-arrow.png")
-      
-	// --------------------------------------------------------------------
-	// - WHY A BIKE?
-	// --------------------------------------------------------------------
-  
-	section.home-section.content-width#whyabike
-    
-		div.why-box.imageBox.float-left
-			label. 
-				WHY
-    
-		div.why-text.textBox.float-right
-			label.
-				A BIKE?
-      
-			div.content
-				p.
-					A bike represents user experience at its best. For any product/service to have meaning, it needs to fulfill a 
-					specific “need” from the user. For a bike, that need is traveling. Before adding any features (complexity) to 
-					products and services, it’s important to identify the core reason as to why the user needs it and what problem is 
-					being solved. When core reasons are not identified properly, it can lead to unnecessary complications and confusion 
-					for the user. 
-				p.
-					If we dive deeper into the design of the bike, we can see that everything is there to serve an important and 
-					unique purpose. If we were to take away any component on the bike, it would not be able to fulfill the user’s 
-					need to travel. Removing the handlebars removes the user’s ability to make the bicycle’s ability to steer. 
-					Removing a pedal would mean that the user will be unable to pedal the bike. Removing just a single link from 
-					its chain will completely ruin the bike’s ability to move.
-        
-		div(style="clear: both;line-height:0;").
-			&nbsp;
-  
-	// --------------------------------------------------------------------
-	// - WHO AM I?
-	// --------------------------------------------------------------------
-  
-	section.home-section.content-width#whoami
-  
-		div.who-box.imageBox.float-left
-			label.
-				WHO
-      
-		div.who-text.textBox.float-right
-			label.
-				AM I?
-			
-			div.content 
-				p.
-					Hi. My name is Ruby Cheung. I am currently a student at Universi- ty of Waterloo, studying Global Business & Digital Arts.
-				p.
-					Through my program, I fell in love with user experience through seeking core reasons of why people use certain products/services. 
-					I enjoy exploring all the ways that different users interact with the same product, and it is exhilarating to try to think of ways 
-					of optimizing that experience.
-	
-	// --------------------------------------------------------------------
-	// - WHAT I DO
-	// --------------------------------------------------------------------      
-	section.home-section.content-width#whatido
-  
-  
+		section.full-width.full-height#headerSplash
+			div.header-text.content-width
+				img.header-label(src="images/UxDesigner.png")
+
+			a.horizontally-center.header-arrow.sliding-link(href="#whyabike")
+				img(src="images/header-arrow.png")
+
+		// --------------------------------------------------------------------
+		// - WHY A BIKE?
+		// --------------------------------------------------------------------
+
+		section.home-section.content-width#whyabike
+
+			div.why-box.imageBox.float-left
+				label WHY
+
+			div.why-text.textBox.float-right
+				label A BIKE?
+
+				div.content
+					p.
+						A bike represents user experience at its best. For any product/service to have meaning, it needs to fulfill a 
+						specific “need” from the user. For a bike, that need is traveling. Before adding any features (complexity) to 
+						products and services, it’s important to identify the core reason as to why the user needs it and what problem is 
+						being solved. When core reasons are not identified properly, it can lead to unnecessary complications and confusion 
+						for the user. 
+					p.
+						If we dive deeper into the design of the bike, we can see that everything is there to serve an important and 
+						unique purpose. If we were to take away any component on the bike, it would not be able to fulfill the user’s 
+						need to travel. Removing the handlebars removes the user’s ability to make the bicycle’s ability to steer. 
+						Removing a pedal would mean that the user will be unable to pedal the bike. Removing just a single link from 
+						its chain will completely ruin the bike’s ability to move.
+	        
+			div(style="clear: both;line-height:0;") &nbsp;
+
+		// --------------------------------------------------------------------
+		// - WHO AM I?
+		// --------------------------------------------------------------------
+
+		section.home-section.content-width#whoami
+
+			div.who-box.imageBox.float-left
+				label.
+					WHO
+	      
+			div.who-text.textBox.float-right
+				label.
+					AM I?
+				
+				div.content 
+					p.
+						Hi. My name is Ruby Cheung. I am currently a student at the University of Waterloo, studying Global Business & Digital Arts.
+					p.
+						Through my program, I fell in love with user experience through seeking core reasons of why people use certain products/services. 
+						I enjoy exploring all the ways that different users interact with the same product, and it is exhilarating to try to think of ways 
+						of optimizing that experience.
+						
+			div(style="clear: both;line-height:0;") &nbsp;
+		
+		// --------------------------------------------------------------------
+		// - WHAT I DO
+		// --------------------------------------------------------------------      
+		section.home-section.content-width#whatido
+		
+			div.what-banner
+				div.what-box.float-right
+					label.
+						WHAT
+				label.ido.
+					I DO
+				img.ipad(src="images/ipad-tech.png")
+					
+			div.what-content
+				div.item.float-left
+					img.icon(src="images/interaction-design-icon.png")
+					h2 INTERACTION DESIGN
+					img.seperator(src="images/55px-seperator.jpg")
+					p.
+						Interaction Design is an approach to design that focuses on how people interact with the product. 
+						As a user experience designer, I focus on creating products that allows users to interface with it 
+						effortlessly, creating a positive and enjoyable experience. I use interaction design to help me 
+						understand what can be done, what is happening, and what has just occurred.
+				div.item.float-right
+					img.icon(src="images/mm-design-icon.png")
+					h2 MULTI-MEDIUM DESIGN
+					img.seperator(src="images/55px-seperator.jpg")
+					p.
+						As a user experience designer, I believe in being able to design for multiple platforms and mediums, 
+						whether print or digital. I prioritize key user experience principles and methods that are 
+						transferrable to any medium by focusing on understanding the way users interact with the product.
+						
+				div.item.float-left
+					img.icon(src="images/prototyping-icon.png")
+					h2 PROTOTYPING
+					img.seperator(src="images/55px-seperator.jpg")
+					p.
+						Prototyping allows me to gather feedback to quick iterations of ideas before major development is done. 
+						These prototypes can range from low-fidelity (wireframes) to high-fidelity. Low-fidelity prototypes 
+						allow me to identify the structure and placement of all of the elements, without focusing on 
+						particulars such as images and colors. The goal of the low-fidelity prototype is to filter out issues 
+						with content placement. Then, using higher-fidelity prototypes, I can focus on smaller details such 
+						as color and specific images. 
+						By creating these prototypes, I am able to find issues or validate the user experience for the users.	
+						
+				div.item.float-right
+					img.icon(src="images/storytelling-icon.png")
+					h2 STORYTELLING
+					img.seperator(src="images/55px-seperator.jpg")
+					p.
+						People love stories. Stories have always been a part of human culture, from cave-wall paintings 
+						to multi-million dollar movies playing in theaters today. 
+						In design, I believe in using storytelling to create compelling experiences that build emotional 
+						connections with the user.
+						
+				div(style="clear: both;line-height:0;") &nbsp;
+		div.copyright &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG
