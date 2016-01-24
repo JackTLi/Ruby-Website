@@ -60,6 +60,31 @@
   position: relative;
 }
 
+@media screen and (max-width: $break-medium) {
+	.imageBox {
+		label {
+			right:auto;
+			top: auto;
+			bottom: 5px;
+			left: 50px;
+		}
+	}
+
+	.textBox {
+		label {
+			top: 5px;
+			left: 50px;
+		}
+	}
+
+	.why-box {
+		width: 100%
+	}
+	.why-text {
+		width: 100%;
+	}
+}
+
 .who-box {
   width: 30%;
   margin-left: 10%;
@@ -74,6 +99,18 @@
 	height: 300px;
 	overflow-y: hidden;
 	position: relative;
+}
+
+@media screen and (max-width: $break-medium) {
+	.who-box {
+		margin-left: 0px;
+		width: 50%;
+		margin-right: 50%;
+	}
+
+	.who-text {
+		width: 100%;
+	}
 }
 
 
@@ -116,6 +153,25 @@
 	}
 }
 
+@media screen and (max-width: $break-medium) {
+	.what-banner {
+		height: 300px;
+
+		.ido {
+			left: auto;
+			right: 50px;
+		}
+
+		.what-box {
+			height: 230px;
+			label {
+				left: auto;
+				right: 50px;
+			}
+		}
+	}
+}
+
 .what-content {
 	.icon {
 		position: relative;
@@ -152,6 +208,17 @@
 		margin-right: 5%;
 		margin-left: 5%;
 		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: $break-medium) {
+	.what-content {
+		.item {
+			width: calc(100% - 100px);
+			margin-right: 50px;
+			margin-left: 50px;
+
+		}
 	}
 }
 
