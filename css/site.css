@@ -41,7 +41,6 @@ body {
 .float-right {
   float: right; }
 
-/* text */
 /* nav */
 .nav {
   position: fixed;
@@ -102,15 +101,18 @@ img.header-label {
 .home-section {
   margin-top: 100px; }
 
-#why label {
+.home-section label {
   font-size: 50px;
   letter-spacing: 10px; }
 
-.imageBox label {
-  font-weight: bold;
-  position: absolute;
-  right: 20px;
-  top: 20px; }
+.imageBox {
+  position: relative; }
+  .imageBox label {
+    font-weight: bold;
+    color: #fffffe;
+    position: absolute;
+    right: 20px;
+    top: 20px; }
 
 .textBox label {
   font-weight: 100;
@@ -126,17 +128,26 @@ img.header-label {
     margin-right: 50px; }
 
 .why-box {
-  color: #fffffe;
   height: 400px;
   background-image: url("../images/bike_flipped.jpg");
   background-size: cover;
-  width: 60%;
-  position: relative; }
+  width: 60%; }
 
 .why-text {
   width: 40%;
   height: 400px;
   overflow-y: hidden;
   position: relative; }
+
+.who-box {
+  width: 30%;
+  margin-left: 10%;
+  height: 300px;
+  background-image: url("../images/portrait_flipped.jpg");
+  background-size: cover;
+  background-position: top center; }
+
+.who-text {
+  width: 60%; }
 
 /*# sourceMappingURL=site.css.map */
