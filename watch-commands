@@ -1,0 +1,3 @@
+sass --watch site.scss:site.css --style compressed
+jade -w jade --out .
+coffee --watch --compile --output js/ coffeescript/

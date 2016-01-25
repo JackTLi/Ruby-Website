@@ -1,0 +1,32 @@
+$nav-height-large: 140px;
+$nav-height-medium: 80px;
+
+.nav {
+  position:fixed;
+  vertical-align: middle;
+  width: calc(100% - 50px);
+  height: $nav-height-large;
+  line-height: $nav-height-large;
+  z-index: 2;
+
+  .logo {
+    img {
+      vertical-align: middle;
+      height: ($nav-height-large / 2);
+    }
+  }
+}
+
+@media screen and (max-width: $break-large) {
+  .nav {
+    height: $nav-height-medium;
+    line-height: $nav-height-medium;
+
+    .logo {
+      img {
+        height: ($nav-height-medium / 2);
+        position:relative;
+      }
+    }
+  }
+}
