@@ -6,7 +6,13 @@
 }
 
 #familybbqSplash {
-	background-image: url('../images/headerbbq.jpg');
+	background-image: url('../images/bbq/headerbbq.jpg');
+	background-size: cover;
+	background-position: center center;
+}
+
+#partnerpackageSplash {
+	background-image: url('../images/partnerpackage/partnerpackage-splash.jpg');
 	background-size: cover;
 	background-position: center center;
 }
@@ -52,7 +58,7 @@ img.header-label {
 	bottom: 50px;
 	right: 50px;
 
-	text-shadow: 1px 1px 20px white;
+	text-shadow: 0px 0px 50px white;
 	color: #000;
 	letter-spacing: 4px;
 
