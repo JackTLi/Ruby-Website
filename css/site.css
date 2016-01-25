@@ -41,6 +41,51 @@ body {
 .float-right {
   float: right; }
 
+.toggle-more {
+  display: none; }
+
+.overflowed400 {
+  height: 380px; }
+  .overflowed400 .content {
+    height: 250px; }
+
+.overflowed300 {
+  height: 280px; }
+  .overflowed300 .content {
+    height: 150px; }
+
+.overflowed400, .overflowed300 {
+  position: relative; }
+  .overflowed400 .content, .overflowed300 .content {
+    overflow-y: hidden; }
+  .overflowed400.expanded, .overflowed300.expanded {
+    height: auto; }
+    .overflowed400.expanded .content, .overflowed300.expanded .content {
+      height: auto; }
+  .overflowed400 .toggle-more, .overflowed300 .toggle-more {
+    display: block;
+    cursor: pointer;
+    color: #e8dcd1;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 12px;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: -20px;
+    z-index: 2; }
+    .overflowed400 .toggle-more img, .overflowed300 .toggle-more img {
+      height: 25px; }
+    .overflowed400 .toggle-more .readmore, .overflowed300 .toggle-more .readmore {
+      display: block; }
+    .overflowed400 .toggle-more .readless, .overflowed300 .toggle-more .readless {
+      display: none; }
+
+.expanded .readmore {
+  display: none !important; }
+.expanded .readless {
+  display: block !important; }
+
 /* nav */
 .nav {
   position: fixed;
@@ -119,7 +164,8 @@ img.header-label {
   left: 20px;
   top: 20px; }
 .textBox .content {
-  margin-top: 50px; }
+  margin-top: 50px;
+  position: relative; }
   .textBox .content p {
     letter-spacing: 1px;
     text-align: justify;
@@ -134,8 +180,6 @@ img.header-label {
 
 .why-text {
   width: 40%;
-  height: 400px;
-  overflow-y: hidden;
   position: relative; }
 
 @media screen and (max-width: 900px) {
@@ -164,8 +208,6 @@ img.header-label {
 
 .who-text {
   width: 60%;
-  height: 300px;
-  overflow-y: hidden;
   position: relative; }
 
 @media screen and (max-width: 900px) {
@@ -236,19 +278,23 @@ img.header-label {
   font-weight: 100;
   font-size: 16px;
   line-height: 27px;
+  height: 400px;
   text-align: justify;
-  height: 300px;
-  overflow-y: hidden;
   width: 40%;
   margin-right: 5%;
   margin-left: 5%;
   margin-top: 50px; }
+  .what-content .item.overflowed400 .content {
+    height: 50px; }
+  .what-content .item.overflowed400.expanded .content {
+    height: auto; }
 
 @media screen and (max-width: 900px) {
   .what-content .item {
     width: calc(100% - 100px);
     margin-right: 50px;
-    margin-left: 50px; } }
+    margin-left: 50px;
+    height: auto; } }
 .copyright {
   margin-top: 100px;
   margin-bottom: 50px;

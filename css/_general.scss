@@ -61,3 +61,76 @@ body {
 .float-right {
   float: right;
 }
+
+.toggle-more {
+	display:none;
+}
+
+.overflowed400 {
+	height: 380px;
+
+	.content {
+		height: 250px;
+	}
+}
+
+.overflowed300 {
+	height: 280px;
+
+	.content {
+		height: 150px;
+	}
+}
+
+.overflowed400, .overflowed300 {
+
+	position: relative;
+
+	.content {
+		overflow-y: hidden;
+	}
+
+	&.expanded {
+		height: auto;
+
+		.content {
+			height: auto;
+		}
+	}
+
+	.toggle-more {
+		display: block;
+		cursor: pointer;
+
+		color: $primary-accent;
+		font-weight: bold;
+		letter-spacing: 3px;
+		font-size: 12px;
+
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		bottom: -20px;
+		z-index: 2;
+
+		img {
+			height: 25px;
+		}
+
+		.readmore {
+			display: block;
+		}
+		.readless {
+			display: none;
+		}
+	}
+}
+
+.expanded {
+	.readmore {
+		display: none !important;
+	}
+	.readless {
+		display:block !important;
+	}
+}
