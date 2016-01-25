@@ -2,6 +2,13 @@
   background-image: url('../images/header.jpg');
   background-size:cover;
   background-position: center center;
+  position: relative;
+}
+
+#familybbqSplash {
+	background-image: url('../images/headerbbq.jpg');
+	background-size: cover;
+	background-position: center center;
 }
 
 .header-text {
@@ -38,4 +45,26 @@ img.header-label {
   img {
     width: 50px;
   }
+}
+
+.pos-info {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+
+	text-shadow: 1px 1px 20px white;
+	color: #000;
+	letter-spacing: 4px;
+
+	text-align: right;
+	h2 {
+		margin-top: 0;
+		margin-bottom: 10px;
+		font-weight: bold;
+		font-size: 35px;
+	}
+	p {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
