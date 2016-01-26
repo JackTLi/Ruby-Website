@@ -126,6 +126,23 @@ body {
 	}
 }
 
+.top {
+	margin-bottom: 0 !important;
+}
+
+.middle {
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.bottom {
+	margin-top: 0 !important;
+}
+
+.one-half {
+	width: 50%;
+}
+
 .expanded {
 	.readmore {
 		display: none !important;
