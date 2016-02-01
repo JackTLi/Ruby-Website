@@ -22,6 +22,7 @@ $break-large: 1200px;
 $break-xlarge: 2300px;
 
 $primary-accent: #e8dcd1;
+$primary-solid: #d9a273;
 $title-box-color: #fffffe;
 $font-color: #aeb0b2;
 
@@ -31,6 +32,29 @@ body {
   font-size: 19px;
   color: $font-color;
   overflow-x:hidden;
+
+  &.fixed-position {
+	  overflow: hidden;
+  }
+}
+
+.dimmer {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	visibility: hidden;
+	z-index: 2;
+	opacity: 0;
+
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+
+	&.open {
+		visibility: visible;
+		opacity: 1;
+		transition: visibility 0s, opacity 0.5s linear;
+	}
 }
 
 .full-height {
@@ -111,7 +135,7 @@ body {
 		width: 100%;
 		text-align: center;
 		bottom: -20px;
-		z-index: 2;
+		z-index: 1;
 
 		img {
 			height: 25px;

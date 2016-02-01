@@ -25,28 +25,38 @@
 	}
 }
 
-#familybbqIntroduction {
-	.introduction-content {
-		background-image: url('../images/poster-intro.png');
-	}
+
+.poster-intro {
+	background-image: url('../images/poster-intro.png');
 }
 
-#partnerpackageIntroduction {
-	.introduction-content {
-		background-image: url('../images/book-intro.png');
-	}
+.book-intro {
+	background-image: url('../images/book-intro.png');
 }
 
-#jamaquizIntroduction {
-	.introduction-content {
-		background-image: url('../images/mobile-intro.png');
-	}
+.mobile-intro {
+	background-image: url('../images/mobile-intro.png');
 }
+
+.web-intro {
+	background-image: url('../images/web-intro.png');
+}
+
 
 #familybbq-simplifiedversion {
+
+	.background {
+		background-color: $primary-accent;
+		width: 50%;
+		padding-left: 50px;
+		padding-right: 50px;
+		left: -100px;
+	}
+
 	.ipad-image {
+		background-size: 80% auto;
+		background-position: center center;
 		background-image: url('../images/bbq/bbq-ipad2.png');
-		left:-100px;
 	}
 }
 
@@ -109,6 +119,26 @@
 	.imagebox {
 		img {
 			float:inherit;
+		}
+	}
+}
+
+#knowledgehook-problem {
+	.screenshot {
+		width: 50%;
+		background-size: contain;
+		background-color: $primary-accent;
+		background-position: center center;
+		padding-left: 50px;
+		left: -50px;
+		background-image: url('../images/knowledgehook/problem.png');
+	}
+}
+
+#knowledgehook-solution {
+	.imagebox {
+		img {
+			float: inherit;
 		}
 	}
 }
