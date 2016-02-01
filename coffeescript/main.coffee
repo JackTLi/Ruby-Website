@@ -4,10 +4,20 @@ jQuery ->
 		$('html,body').animate { scrollTop:$(this.hash).offset().top }, 400;
 
 	$(".toggle-more").click ->
-			if $(this).parent().hasClass('expanded')
-				$(this).parent().removeClass('expanded')
-			else
-				$(this).parent().addClass('expanded')
+		if $(this).parent().hasClass('expanded')
+			$(this).parent().removeClass('expanded')
+		else
+			$(this).parent().addClass('expanded')
+
+	$(".slide-toggle").click ->
+		$('#hamburger').toggleClass('open')
+		$('.nav-slider').toggleClass('open')
+		$('.dimmer').toggleClass('open')
+		$('body').toggleClass("fixed-position")
+
+	$('#nav-portfolio').click ->
+		$('.portfolio-menu').toggleClass('open')
+		$('.primary-menu').toggleClass('portfolio-opened')
 
   return
 

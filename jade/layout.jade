@@ -14,10 +14,59 @@ html(lang="en")
 		link(rel="icon", href="favicon.ico", type="image/x-icon")  	
 	
 	body
+	
+		div.dimmer.full-width.full-height
+	
 		div.horizontally-center.full-width.nav
 			a.logo(href="index.html")
 				img(src="images/logo.png")
-	
+			
+			div#hamburger.slide-toggle
+				span
+				span
+				span
+				
+		div.nav-slider
+			ul.primary-menu
+				a(href="index.html#whyabike").slide-toggle
+					li#nav-why 
+						div.icon#image-why
+							img(src="images/nav/bike.png")
+						|WHY 
+						span A BIKE?
+				a(href="index.html#whoami").slide-toggle
+					li#nav-who 
+						div.icon#image-who
+							img(src="images/nav/who.png")
+						|WHO 
+						span AM I?
+				a(href="index.html#whatido").slide-toggle
+					li#nav-what 
+						div.icon#image-what
+							img(src="images/nav/what.png")
+						|WHAT 
+						span I DO
+				li#nav-portfolio
+					div.icon#image-portfolio
+						img(src="images/nav/portfolio.png")
+					|PORTFOLIO
+			ul.portfolio-menu
+				li
+					h2 WEB
+				li KNOWLEDGEHOOK
+				li JACKTLI
+				
+				li
+					h2 MOBILE
+				li JAMAQUIZ
+				
+				li
+					h2 PRINT
+				li FAMILY BBQ
+				li IMPACT REPORT
+				li PARTNER PACKAGE
+				
+							
 		block content
 
 		div.copyright &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG

@@ -16,6 +16,16 @@
         return $(this).parent().addClass('expanded');
       }
     });
+    $(".slide-toggle").click(function() {
+      $('#hamburger').toggleClass('open');
+      $('.nav-slider').toggleClass('open');
+      $('.dimmer').toggleClass('open');
+      return $('body').toggleClass("fixed-position");
+    });
+    return $('#nav-portfolio').click(function() {
+      $('.portfolio-menu').toggleClass('open');
+      $('.primary-menu').toggleClass('portfolio-opened');
+    });
   });
 
   $(window).load(function() {
