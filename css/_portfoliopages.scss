@@ -146,7 +146,7 @@
 	.screenshot {
 		width: 50%;
 		background-size: contain;
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 		background-position: center center;
 		padding-left: 50px;
 		left: -50px;
@@ -173,7 +173,7 @@
 	}
 	.imagebox {
 		z-index: -1;
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 
 		padding-top: auto;
 		padding-bottom: auto;
@@ -192,8 +192,8 @@
 .overlapping-box {
 	background: linear-gradient(
 	 to right,
-	 $primary-accent 0%,
-	 $primary-accent 50%,
+	 $portfolio-beige-box 0%,
+	 $portfolio-beige-box 50%,
 	 #fff 50%,
 	 #fff 100%);
 	background-position: left center;
@@ -257,7 +257,7 @@
 			height: 300px;
 			display:block;
 			position:initial;
-			background-color: $primary-accent;
+			background-color: $portfolio-beige-box;
 			span {
 				background-size: contain !important;
 			}
@@ -303,13 +303,13 @@
 
 		&#jamaquiz-solution {
 			.imagebox {
-				background: $primary-accent;
+				background: $portfolio-beige-box;
 			}
 		}
 
 		&#knowledgehook-solution {
 			.imagebox {
-				background: $primary-accent;
+				background: $portfolio-beige-box;
 			}
 		}
 
@@ -333,7 +333,7 @@
 	}
 
 	.one-half.image {
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 		padding-top:100px;
 		padding-bottom: 100px;
 
