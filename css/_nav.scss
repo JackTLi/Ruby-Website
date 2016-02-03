@@ -80,7 +80,7 @@ $nav-height-medium: 80px;
 
 	ul {
 		list-style-type: none;
-		margin-top: 150px;
+		margin-top: 50px;
 
 		&.primary-menu {
 			position: absolute;
@@ -142,11 +142,14 @@ $nav-height-medium: 80px;
 		}
 
 		&.portfolio-menu {
-			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+			text-align: center;
+			font-size: 14px;
 			width: 180px;
 			left: -300px;
 			margin-top:0;
-			padding-top:150px;
+			padding-top:20px;
 			height: 100vh;
 			position: absolute;
 			top: 0;
@@ -169,6 +172,10 @@ $nav-height-medium: 80px;
 			}
 
 			li {
+				margin-top: 25px;
+				a {
+					color: $font-color;
+				}
 				h2 {
 					color: $primary-solid;
 				}
