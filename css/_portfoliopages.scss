@@ -42,6 +42,21 @@
 	background-image: url('../images/web-intro.png');
 }
 
+.button {
+	margin-top: 20px;
+	text-decoration: none;
+	padding: 0px 20px;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	color: $primary-accent;
+	font-weight: bold;
+	font-size: 16px;
+	letter-spacing: 2px;
+	border: 2px solid $primary-accent;
+	display: inline-block;
+	cursor:pointer;
+}
+
 
 #familybbq-simplifiedversion {
 
@@ -57,6 +72,10 @@
 		background-size: 80% auto;
 		background-position: center center;
 		background-image: url('../images/bbq/bbq-ipad2.png');
+	}
+
+	span {
+		width: 100%;
 	}
 
 	#infoarch {
@@ -117,7 +136,7 @@
 #jamaquiz-goal {
 	.logo {
 		background-image: url('../images/jamaquiz/c2w-logo.png');
-		background-size: 30% auto;
+		background-size: 60% auto;
 		left: 10%;
 	}
 }
@@ -181,11 +200,11 @@
 	margin-bottom: 200px;
 
 	span {
-		background-size: 50% auto;
+		background-size: 100% auto;
 		background-position:left center;
 		background-repeat: no-repeat;
 		z-index:1;
-		width: 100%;
+		width: 50%;
 		height: 100%;
 		position: absolute;
 		left:0px;
