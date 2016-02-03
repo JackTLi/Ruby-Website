@@ -5,9 +5,7 @@ jQuery ->
 
 	$(".toggle-more").click ->
 		if $(this).parent().hasClass('expanded')
-			$(this).parent().removeClass('expanded')
-		else
-			$(this).parent().addClass('expanded')
+			$(this).parent().toggleClass('expanded')
 
 	$(".slide-toggle").click ->
 		$('#hamburger').toggleClass('open')
@@ -32,17 +30,14 @@ $(window).resize ->
 
 
 checkOverflow400 = () ->
-	$('.overflowable400').each ->
+	$('.overflowable400').each ->z
 		if $(this).height() > 400
 			$(this).addClass('overflowed400');
 		else
 			$(this).removeClass('.overflowed400');
 
-	$('.overflowed').each ->
-
 checkOverflow300 = () ->
 	$('.overflowable300').each ->
-		h = $(this).height()
 		if $(this).height() > 300
 			$(this).addClass('overflowed300');
 		else

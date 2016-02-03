@@ -50,7 +50,9 @@ img.header-label {
 @media screen and (max-width: $break-large) {
   .header-text {
     left: 25px;
-    top: 90px;
+    width: 200px;
+    margin-left:0;
+    margin-right:0;
   }
   img.header-label {
     width: 250px;
@@ -74,15 +76,26 @@ img.header-label {
 	color: #000;
 	letter-spacing: 4px;
 
+  font-size: 20px;
+
 	text-align: right;
 	h2 {
 		margin-top: 0;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		font-weight: bold;
 		font-size: 35px;
+    letter-spacing: 7px;
 	}
 	p {
+    line-height: 29px;
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+}
+
+#knowledgehookSplash {
+	.pos-info {
+    top: 150px;
+    right: 100px;
+  }
 }
