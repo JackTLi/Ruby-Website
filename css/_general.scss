@@ -32,6 +32,7 @@ body {
   font-size: 19px;
   color: $font-color;
   overflow-x:hidden;
+  letter-spacing: 1px;
 
   &.fixed-position {
 	  overflow: hidden;
