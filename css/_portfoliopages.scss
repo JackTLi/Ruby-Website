@@ -55,6 +55,11 @@
 	border: 2px solid $primary-accent;
 	display: inline-block;
 	cursor:pointer;
+
+	&:hover {
+		background-color: $primary-accent;
+		color: #fff;
+	}
 }
 
 

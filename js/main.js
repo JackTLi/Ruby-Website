@@ -39,25 +39,14 @@
   });
 
   checkOverflow400 = function() {
-    $('.overflowable400').each(function() {
-      if ($(this).height() > 400) {
-        return $(this).addClass('overflowed400');
-      } else {
-        return $(this).removeClass('.overflowed400');
-      }
+    return $('.overflowable400').each(function() {
+      return $(this).toggleClass('overflowed400');
     });
-    return $('.overflowed').each(function() {});
   };
 
   checkOverflow300 = function() {
     return $('.overflowable300').each(function() {
-      var h;
-      h = $(this).height();
-      if ($(this).height() > 300) {
-        return $(this).addClass('overflowed300');
-      } else {
-        return $(this).removeClass('.overflowed300');
-      }
+      return $(this).toggleClass('overflowed300');
     });
   };
 
