@@ -50,7 +50,9 @@ img.header-label {
 @media screen and (max-width: $break-large) {
   .header-text {
     left: 25px;
-    top: 90px;
+    width: 200px;
+    margin-left:0;
+    margin-right:0;
   }
   img.header-label {
     width: 250px;
