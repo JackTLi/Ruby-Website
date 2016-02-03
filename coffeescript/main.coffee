@@ -4,8 +4,7 @@ jQuery ->
 		$('html,body').animate { scrollTop:$(this.hash).offset().top }, 400;
 
 	$(".toggle-more").click ->
-		if $(this).parent().hasClass('expanded')
-			$(this).parent().toggleClass('expanded')
+		$(this).parent().toggleClass('expanded')
 
 	$(".slide-toggle").click ->
 		$('#hamburger').toggleClass('open')
@@ -28,9 +27,8 @@ $(window).resize ->
 	checkOverflow400()
 
 
-
 checkOverflow400 = () ->
-	$('.overflowable400').each ->z
+	$('.overflowable400').each ->
 		if $(this).height() > 400
 			$(this).addClass('overflowed400');
 		else

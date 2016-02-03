@@ -20,7 +20,7 @@
     font-weight: bold;
     color: $title-box-color;
     position: absolute;
-    right: 20px;
+    right: 10px;
     top: 20px;
   }
 }
@@ -59,20 +59,24 @@
   position: relative;
 }
 
-@media screen and (max-width: $break-medium) {
+@media screen and (max-width: $break-mobile) {
 	.imageBox {
 		label {
 			right:auto;
 			top: auto;
-			bottom: 5px;
+			bottom: 15px;
 			left: 50px;
 		}
 	}
 
 	.textBox {
 		label {
-			top: 5px;
+			top: 15px;
 			left: 50px;
+		}
+
+		.content {
+			margin-top: 0;
 		}
 	}
 
@@ -91,6 +95,17 @@
   background-image: url('../images/portrait_flipped.jpg');
   background-size: cover;
   background-position: top center;
+
+	.mobile {
+		right: -15px;
+		top: 25px;
+		bottom: auto;
+		transform: translateX(100%);
+		left: auto;
+		font-weight: 100;
+		color: $font-color;
+		visibility: hidden;
+	}
 }
 
 .who-text {
@@ -98,15 +113,30 @@
 	position: relative;
 }
 
-@media screen and (max-width: $break-medium) {
+@media screen and (max-width: $break-mobile) {
 	.who-box {
 		margin-left: 0px;
 		width: 50%;
 		margin-right: 50%;
+
+		.who {
+			top: 25px;
+			right: 15px;
+			bottom: auto;
+			left: auto;
+		}
+
+		.mobile {
+			visibility: visible;
+		}
 	}
 
 	.who-text {
 		width: 100%;
+
+		.desktop {
+			display: none;
+		}
 	}
 }
 
@@ -123,7 +153,7 @@
 	.ido {
 		position:absolute;
 		left: calc(20% + 220px);
-		bottom: 5px;
+		bottom: 25px;
 	}
 
 	img.ipad {
@@ -145,18 +175,19 @@
 			font-weight: bold;
 			color:$title-box-color;
 			left: 200px;
-			bottom: 5px;
+			bottom: 15px;
 		}
 	}
 }
 
-@media screen and (max-width: $break-medium) {
+@media screen and (max-width: $break-mobile) {
 	.what-banner {
 		height: 300px;
 
 		.ido {
 			left: auto;
 			right: 50px;
+			bottom: 25px;
 		}
 
 		.what-box {
@@ -164,6 +195,7 @@
 			label {
 				left: auto;
 				right: 50px;
+				bottom: 15px;
 			}
 		}
 	}
@@ -218,7 +250,7 @@
 	}
 }
 
-@media screen and (max-width: $break-medium) {
+@media screen and (max-width: $break-mobile) {
 	.what-content {
 		.item {
 			width: calc(100% - 100px);
@@ -230,11 +262,13 @@
 }
 
 .copyright {
-	margin-top: 100px;
-	margin-bottom: 50px;
-
-	font-size: 12px;
+	font-size: 8px;
+	letter-spacing: 0px;
 	font-weight: 100;
-	color: #e1d0c2;
+	color: $primary-solid;
+	font-weight:bold;
+	position: absolute;
+	bottom: 25px;
 	text-align: center;
+	width: 100%;
 }

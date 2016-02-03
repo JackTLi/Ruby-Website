@@ -179,6 +179,10 @@ $nav-height-medium: 80px;
 				h2 {
 					color: $primary-solid;
 				}
+
+				&:hover {
+					font-weight: bold;
+				}
 			}
 
 		}

@@ -91,18 +91,6 @@
 	}
 }
 
-.overlapping-box {
-	background: linear-gradient(
-	 to right,
-	 $primary-accent 0%,
-	 $primary-accent 50%,
-	 #fff 50%,
-	 #fff 100%);
-	background-position: left center;
-	background-repeat: no-repeat;
-	position: relative;
-}
-
 #familybbq-complexversion {
 	background-size: contain;
 	background-position: right center;
@@ -158,7 +146,7 @@
 	.screenshot {
 		width: 50%;
 		background-size: contain;
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 		background-position: center center;
 		padding-left: 50px;
 		left: -50px;
@@ -185,7 +173,7 @@
 	}
 	.imagebox {
 		z-index: -1;
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 
 		padding-top: auto;
 		padding-bottom: auto;
@@ -199,6 +187,18 @@
 			width: 100%;
 		}
 	}
+}
+
+.overlapping-box {
+	background: linear-gradient(
+	 to right,
+	 $portfolio-beige-box 0%,
+	 $portfolio-beige-box 50%,
+	 #fff 50%,
+	 #fff 100%);
+	background-position: left center;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
 .portfolio-text {
@@ -228,7 +228,7 @@
 		padding-right: 100px;
 
 		&.with-bg {
-			background-color: rgba(0, 0, 0, 0.03);
+			background-color: $portfolio-grey-box;
 		}
 
 		h2 {
@@ -239,6 +239,84 @@
 		}
 	}
 }
+
+@media screen and (max-width: $break-mobile) {
+
+	.overlapping-box {
+		background: none;
+	}
+
+	.portfolio-text {
+		margin-bottom: 0 !important;
+		margin-top:50px !important;
+
+		span {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+			width: 100% !important;
+			height: 300px;
+			display:block;
+			position:initial;
+			background-color: $portfolio-beige-box;
+			span {
+				background-size: contain !important;
+			}
+		}
+
+		.text-box {
+			width: auto !important;
+			margin:0 !important;
+		}
+
+		.imagebox {
+			position: initial !important;
+			transform: none !important;
+			width: 100% !important;
+			height: 500px;
+			text-align: center;
+			background-color: $portfolio-grey-box;
+			padding-top: 50px;
+			img {
+				height: 100% !important;
+				width: auto !important;
+				float:none !important;
+			}
+		}
+
+		&#partnerpackageSolution {
+			.imagebox {
+				background: none;
+			}
+		}
+
+		&#jamaquiz-goal {
+			.logo {
+				background-position: center center;
+			}
+		}
+
+		&#jamaquiz-usability {
+			.imagebox {
+				background-color: $portfolio-grey-box;
+			}
+		}
+
+		&#jamaquiz-solution {
+			.imagebox {
+				background: $portfolio-beige-box;
+			}
+		}
+
+		&#knowledgehook-solution {
+			.imagebox {
+				background: $portfolio-beige-box;
+			}
+		}
+
+	}
+
+}
+
 
 .basic-section {
 	padding-top: 100px;
@@ -255,7 +333,7 @@
 	}
 
 	.one-half.image {
-		background-color: $primary-accent;
+		background-color: $portfolio-beige-box;
 		padding-top:100px;
 		padding-bottom: 100px;
 
