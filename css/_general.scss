@@ -24,15 +24,17 @@ $break-xlarge: 2300px;
 $primary-accent: #e8dcd1;
 $primary-solid: #d9a273;
 $title-box-color: #fffffe;
-$font-color: #aeb0b2;
+$font-color: #888;
 
 body {
   margin: 0;
   font-family: $font-stack;
-  font-size: 19px;
+  font-size: 16px;
   color: $font-color;
   overflow-x:hidden;
   letter-spacing: 1px;
+  line-height: 27px;
+
 
   &.fixed-position {
 	  overflow: hidden;
