@@ -17,6 +17,7 @@
 
 $font-stack: Proxima, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
+$break-mobile: 800px;
 $break-medium: 900px;
 $break-large: 1200px;
 $break-xlarge: 2300px;
@@ -25,6 +26,7 @@ $primary-accent: #e8dcd1;
 $primary-solid: #d9a273;
 $title-box-color: #fffffe;
 $font-color: #888;
+$portfolio-grey-box: rgba(0, 0, 0, 0.03);
 
 body {
   margin: 0;
@@ -93,68 +95,71 @@ body {
 	display:none;
 }
 
-.overflowed400 {
-	height: 380px;
+@media screen and (min-width: $break-mobile) {
 
-	.content {
-		height: 250px;
-	}
-}
-
-.overflowed300 {
-	height: 280px;
-
-	.content {
-		height: 150px;
-	}
-}
-
-.overflowed400, .overflowed300 {
-
-	position: relative;
-
-	.content {
-		overflow-y: hidden;
-	}
-
-	&.expanded {
-		height: auto;
+	.overflowed400 {
+		height: 380px;
 
 		.content {
+			height: 250px;
+		}
+	}
+
+	.overflowed300 {
+		height: 280px;
+
+		.content {
+			height: 150px;
+		}
+	}
+
+	.overflowed400, .overflowed300 {
+
+		position: relative;
+
+		.content {
+			overflow-y: hidden;
+		}
+
+		&.expanded {
 			height: auto;
+
+			.content {
+				height: auto;
+			}
+
+			.toggle-more {
+				img {
+					display: none;
+				}
+			}
 		}
 
 		.toggle-more {
+			display: block;
+			cursor: pointer;
+
+			color: $primary-accent;
+			font-weight: bold;
+			letter-spacing: 3px;
+			font-size: 12px;
+
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			bottom: -20px;
+			z-index: 1;
+
 			img {
+				height: 25px;
+			}
+
+			.readmore {
+				display: block;
+			}
+			.readless {
 				display: none;
 			}
-		}
-	}
-
-	.toggle-more {
-		display: block;
-		cursor: pointer;
-
-		color: $primary-accent;
-		font-weight: bold;
-		letter-spacing: 3px;
-		font-size: 12px;
-
-		position: absolute;
-		width: 100%;
-		text-align: center;
-		bottom: -20px;
-		z-index: 1;
-
-		img {
-			height: 25px;
-		}
-
-		.readmore {
-			display: block;
-		}
-		.readless {
-			display: none;
 		}
 	}
 }

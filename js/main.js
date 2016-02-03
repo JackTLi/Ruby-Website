@@ -10,11 +10,7 @@
       }, 400);
     });
     $(".toggle-more").click(function() {
-      if ($(this).parent().hasClass('expanded')) {
-        return $(this).parent().removeClass('expanded');
-      } else {
-        return $(this).parent().addClass('expanded');
-      }
+      return $(this).parent().toggleClass('expanded');
     });
     $(".slide-toggle").click(function() {
       $('#hamburger').toggleClass('open');
@@ -40,13 +36,21 @@
 
   checkOverflow400 = function() {
     return $('.overflowable400').each(function() {
-      return $(this).toggleClass('overflowed400');
+      if ($(this).height() > 400) {
+        return $(this).addClass('overflowed400');
+      } else {
+        return $(this).removeClass('.overflowed400');
+      }
     });
   };
 
   checkOverflow300 = function() {
     return $('.overflowable300').each(function() {
-      return $(this).toggleClass('overflowed300');
+      if ($(this).height() > 300) {
+        return $(this).addClass('overflowed300');
+      } else {
+        return $(this).removeClass('.overflowed300');
+      }
     });
   };
 
