@@ -217,12 +217,11 @@ body {
 
 		&.prev-portfolio {
 			transform: scaleX(-1);
-			left: -50px;
+			left: 10px;
 		}
 
 		&.next-portfolio {
-			right: - 50px;
-			transform: translateX(100%);
+			right: 10px;
 		}
 	}
 }

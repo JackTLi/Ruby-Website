@@ -58,7 +58,7 @@
       }
     }
     console.log(current_item);
-    if ((current_item = -1)) {
+    if (current_item === -1) {
       return $('#navigation-arrows').addClass('hidden');
     }
   });

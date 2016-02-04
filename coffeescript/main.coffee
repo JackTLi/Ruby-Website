@@ -47,7 +47,7 @@ $(window).load ->
 			$('#pfnav-'+portfolio_items[current_item]).addClass('selected-page')
 
 	console.log(current_item);
-	if (current_item = -1)
+	if (current_item == -1)
 		$('#navigation-arrows').addClass('hidden');
 
 
