@@ -157,6 +157,9 @@ body {
 
 			.readmore {
 				display: block;
+				&:hover {
+
+				}
 			}
 			.readless {
 				display: none;
@@ -189,4 +192,41 @@ body {
 	.readless {
 		display:block !important;
 	}
+}
+
+#navigation-arrows {
+	position: relative;
+	height: 100px;
+
+	&.hidden {
+		visibility: hidden;
+	}
+
+	.nav-arrow {
+		cursor: pointer;
+		background-image:url('../images/arrow.png');
+		background-size:contain;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		bottom: 25px;
+
+		&:hover {
+			background-image:url('../images/arrow-hover.png');
+		}
+
+		&.prev-portfolio {
+			transform: scaleX(-1);
+			left: -50px;
+		}
+
+		&.next-portfolio {
+			right: - 50px;
+			transform: translateX(100%);
+		}
+	}
+}
+
+.selected-page {
+	font-weight:bold;
 }

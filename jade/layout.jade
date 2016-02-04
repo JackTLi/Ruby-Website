@@ -54,27 +54,37 @@ html(lang="en")
 				li
 					h2 WEB
 				li 
-					a(href="knowledgehook.html") KNOWLEDGEHOOK
+					a(href="knowledgehook.html")#pfnav-knowledgehook KNOWLEDGEHOOK
 				//- li 
 				//- 	a(href="jacktli.html") JACKTLI
 				
 				li
 					h2 MOBILE
 				li 
-					a(href="jamaquiz.html") JAMAQUIZ
+					a(href="jamaquiz.html")#pfnav-jamaquiz JAMAQUIZ
 				
 				li
 					h2 PRINT
 				li 
-					a(href="familybbq.html") FAMILY BBQ
+					a(href="familybbq.html")#pfnav-familybbq FAMILY BBQ
 				//- li 
 				//- 	a(href="impactreport.html") IMPACT REPORT
 				li 
-					a(href="partnerpackage.html") PARTNER PACKAGE
+					a(href="partnerpackage.html")#pfnav-partnerpackage PARTNER PACKAGE
 					
-			
-			div.social-media-icons
-					
-			div.copyright &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG
+			div.bottom-nav-items
+				div.social-media-icons
+					a(href="https://www.behance.net/rubykcheung")
+						div.icon#behance
+					a(href="https://ca.linkedin.com/in/ruby-cheung-32250341")
+						div.icon#linkedin
+					a(href="mailto:rkcheung@uwaterloo.ca")
+						div.icon#mail
+						
+				div.copyright &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG
 							
 		block content
+		
+		div.content-width#navigation-arrows
+			div.nav-arrow.prev-portfolio
+			div.nav-arrow.next-portfolio
