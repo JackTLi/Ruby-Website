@@ -1,5 +1,5 @@
 portfolio_items = ["knowledgehook", "jamaquiz", "familybbq", "partnerpackage"]
-num_items = 4
+num_items = portfolio_items.length
 current_item = -1
 
 jQuery ->
