@@ -251,6 +251,10 @@
 		margin-bottom: 0 !important;
 		margin-top:50px !important;
 
+		h2 {
+			text-align: center;
+		}
+
 		span {
 			padding-left: 0 !important;
 			padding-right: 0 !important;
@@ -314,8 +318,11 @@
 			}
 		}
 
+		#knowledgehook-releasedate {
+			width: calc(100% - 200px) !important;
+			text-align: center;
+		}
 	}
-
 }
 
 
@@ -352,6 +359,18 @@
 		margin-left: 50px;
 		margin-right: 50px;
 		text-align: justify;
+	}
+}
+
+@media screen and (max-width: $break-mobile) {
+	.basic-section {
+		.one-half {
+			width: 100%;
+
+			&.text {
+				width: calc(100% - 100px);
+			}
+		}
 	}
 }
 
