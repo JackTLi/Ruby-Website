@@ -53,10 +53,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	z-index: 9999;
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+	opacity:0.99;
 	background: url("../images/loading.gif") center no-repeat $loading-background;
 }
 
