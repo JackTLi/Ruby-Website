@@ -34,7 +34,6 @@ jQuery ->
   return
 
 $(window).load ->
-	$(".se-pre-con").fadeOut(500)
 	checkOverflow300()
 	checkOverflow400()
 	current_path = window.location.pathname.split("/").pop()
@@ -42,14 +41,15 @@ $(window).load ->
 	current_item = -1;
 
 	for item, i in portfolio_items
-		console.log(item + " - " + current_path)
 		if item == current_path
 			current_item = i
 			$('#pfnav-'+portfolio_items[current_item]).addClass('selected-page')
 
-	console.log(current_item);
 	if (current_item == -1)
 		$('#navigation-arrows').addClass('hidden');
+		$(".se-pre-con").fadeOut(1000)
+	else
+		$(".se-pre-con").fadeOut(500)
 
 
 $(window).resize ->
