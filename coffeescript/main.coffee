@@ -34,6 +34,7 @@ jQuery ->
   return
 
 $(window).load ->
+	$(".se-pre-con").fadeOut(500)
 	checkOverflow300()
 	checkOverflow400()
 	current_path = window.location.pathname.split("/").pop()

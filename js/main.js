@@ -44,6 +44,7 @@
 
   $(window).load(function() {
     var current_path, i, item, j, len;
+    $(".se-pre-con").fadeOut(500);
     checkOverflow300();
     checkOverflow400();
     current_path = window.location.pathname.split("/").pop();
