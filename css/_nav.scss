@@ -36,14 +36,19 @@ $nav-height-medium: 80px;
     to {right: 0;}
 }
 
-@keyframes nav-portfolio-slide-out {
-    from {left: 0;}
-    to {left: 190px;}
+@keyframes nav-slide-in {
+    from {right: 0;}
+    to {right: -300px;}
 }
 
-@keyframes nav-portfolio-menu-slide-out {
-    from {left: -300px;}
-    to {left: 0px;}
+@keyframes nav-portfolio-slide-out {
+    from {left: 0;}
+    to {left: 200px;}
+}
+
+@keyframes nav-portfolio-slide-in {
+    from {left: 200px;}
+    to {left: 0;}
 }
 
 
@@ -55,23 +60,17 @@ $nav-height-medium: 80px;
 	width: 300px;
 	z-index: 2;
 	background-color: #fff;
-	overflow-x: hidden;
+	overflow: hidden;
 
 	letter-spacing: 2px;
 
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;
 
 	&.open {
 		right:0;
-		animation-name: nav-slide-out;
-    	animation-duration: 0.5s;
 	}
 
 	a {
@@ -88,19 +87,13 @@ $nav-height-medium: 80px;
 			line-height: 25px;
 			width: 260px;
 
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
+			-webkit-transition: 0.35s ease-in-out;
+			-moz-transition: 0.35s ease-in-out;
+			-o-transition: 0.35s ease-in-out;
+			transition: 0.35s ease-in-out;
 
 			&.portfolio-opened {
-				left: 190px;
-				animation-name: nav-portfolio-slide-out;
-				animation-duration: 0.5s;
+				left: 200px;
 
 				.icon:not(#image-portfolio) {
 					opacity: 0.3;
@@ -146,7 +139,7 @@ $nav-height-medium: 80px;
 			padding-right: 20px;
 			text-align: center;
 			font-size: 14px;
-			width: 180px;
+			width: 190px;
 			left: -300px;
 			margin-top:0;
 			padding-top:20px;
@@ -156,19 +149,13 @@ $nav-height-medium: 80px;
 			box-shadow: 5px 0px 20px #ccc;
 			background-color: #fff;
 
-			-webkit-transform: rotate(0deg);
-			-moz-transform: rotate(0deg);
-			-o-transform: rotate(0deg);
-			transform: rotate(0deg);
-			-webkit-transition: .5s ease-in-out;
-			-moz-transition: .5s ease-in-out;
-			-o-transition: .5s ease-in-out;
-			transition: .5s ease-in-out;
+			-webkit-transition: 0.5s ease-out;
+			-moz-transition: 0.5s ease-out;
+			-o-transition: 0.5s ease-out;
+			transition: 0.5s ease-out;
 
 			&.open {
 				left: 0px;
-				animation-name: nav-portfolio-menu-slide-out;
-				animation-duration: 0.5s;
 			}
 
 			li {
@@ -193,13 +180,6 @@ $nav-height-medium: 80px;
 	cursor: pointer;
 }
 
-
-/* Hamburger animation*/
-@keyframes burger-slide-out {
-    from {right: 0;}
-    to {right: 300px;}
-}
-
 #hamburger {
 	position: absolute;
 	right: 0;
@@ -208,20 +188,15 @@ $nav-height-medium: 80px;
 
 	width: 40px;
 	height: 45px;
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+
+	-webkit-transition: 0.4s ease-out;
+	-moz-transition: 0.4s ease-out;
+	-o-transition: 0.4s ease-out;
+	transition: 0.4s ease-out;
 	cursor: pointer;
 
 	&.open {
 		right: 300px;
-		animation-name: burger-slide-out;
-    	animation-duration: 0.5s;
 	}
 
 	span {
@@ -293,14 +268,13 @@ $nav-height-medium: 80px;
 
 .bottom-nav-items {
 
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+	-webkit-transition: 0.35s ease-in-out;
+	-moz-transition: 0.35s ease-in-out;
+	-o-transition: 0.35s ease-in-out;
+	transition: 0.35s ease-in-out;
 
 	&.portfolio-opened {
 		padding-left: 300px;
-		animation-duration: 0.5s;
 	}
 }
 

@@ -4,7 +4,7 @@
 
   portfolio_items = ["knowledgehook", "jamaquiz", "familybbq", "partnerpackage"];
 
-  num_items = 4;
+  num_items = portfolio_items.length;
 
   current_item = -1;
 
@@ -44,6 +44,7 @@
 
   $(window).load(function() {
     var current_path, i, item, j, len;
+    $(".se-pre-con").fadeOut(500);
     checkOverflow300();
     checkOverflow400();
     current_path = window.location.pathname.split("/").pop();
@@ -58,7 +59,7 @@
       }
     }
     console.log(current_item);
-    if ((current_item = -1)) {
+    if (current_item === -1) {
       return $('#navigation-arrows').addClass('hidden');
     }
   });

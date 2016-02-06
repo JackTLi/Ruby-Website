@@ -1,5 +1,5 @@
 portfolio_items = ["knowledgehook", "jamaquiz", "familybbq", "partnerpackage"]
-num_items = 4
+num_items = portfolio_items.length
 current_item = -1
 
 jQuery ->
@@ -34,6 +34,7 @@ jQuery ->
   return
 
 $(window).load ->
+	$(".se-pre-con").fadeOut(500)
 	checkOverflow300()
 	checkOverflow400()
 	current_path = window.location.pathname.split("/").pop()
@@ -47,7 +48,7 @@ $(window).load ->
 			$('#pfnav-'+portfolio_items[current_item]).addClass('selected-page')
 
 	console.log(current_item);
-	if (current_item = -1)
+	if (current_item == -1)
 		$('#navigation-arrows').addClass('hidden');
 
 
