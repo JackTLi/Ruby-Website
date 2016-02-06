@@ -67,7 +67,7 @@
 #familybbq-simplifiedversion {
 
 	.background {
-		background: linear-gradient(to right, #e8dcd1 0%, #e8dcd1 50%, rgba(#ffffff, 0) 50%, rgba(#ffffff, 0) 100%);
+		background: linear-gradient(to right, $portfolio-beige-box 0%, $portfolio-beige-box 50%, rgba(#ffffff, 0) 50%, rgba(#ffffff, 0) 100%);
 		width: 50%;
 		padding-left: 50px;
 		padding-right: 50px;
@@ -124,6 +124,8 @@
 #partnerpackage-problem {
 	.folders {
 		background-image: url('../images/partnerpackage/folders.png');
+		background-size: contain;
+		background-position: center center;
 	}
 }
 
@@ -152,6 +154,14 @@
 		padding-left: 50px;
 		left: -50px;
 		background-image: url('../images/knowledgehook/problem.png');
+	}
+}
+
+#impactreport-problem {
+	.old-report {
+		background-image: url('../images/impactreport/2014-report.png');
+		background-size: contain;
+		background-position: center center;
 	}
 }
 
