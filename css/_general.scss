@@ -29,7 +29,7 @@ $font-color: #888;
 $portfolio-grey-box: rgba(0, 0, 0, 0.03);
 $portfolio-beige-box: #efe3dc;
 
-$loading-background: #e9e3e3;
+$loading-background: #d2cdbe;
 
 body {
   margin: 0;
@@ -53,10 +53,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	z-index: 9999;
-	-moz-transform: scaleX(-1);
-	-o-transform: scaleX(-1);
-	-webkit-transform: scaleX(-1);
-	transform: scaleX(-1);
+	opacity:0.99;
 	background: url("../images/loading.gif") center no-repeat $loading-background;
 }
 
@@ -67,15 +64,14 @@ body {
 	z-index: 2;
 	opacity: 0;
 
-	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 
 	&.open {
 		visibility: visible;
 		opacity: 1;
-		transition: visibility 0s, opacity 0.5s linear;
 	}
 }
 

@@ -58,10 +58,8 @@
     }
     if (current_item === -1) {
       $('#navigation-arrows').addClass('hidden');
-      return $(".se-pre-con").fadeOut(1000);
-    } else {
-      return $(".se-pre-con").fadeOut(500);
     }
+    return $(".se-pre-con").fadeOut(500);
   });
 
   $(window).resize(function() {

@@ -47,9 +47,8 @@ $(window).load ->
 
 	if (current_item == -1)
 		$('#navigation-arrows').addClass('hidden');
-		$(".se-pre-con").fadeOut(1000)
-	else
-		$(".se-pre-con").fadeOut(500)
+
+	$(".se-pre-con").fadeOut(500)
 
 
 $(window).resize ->
