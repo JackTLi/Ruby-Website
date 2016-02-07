@@ -17,6 +17,7 @@
 
 $font-stack: Proxima, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
+$break-small-mobile: 600px;
 $break-mobile: 1000px;
 $break-medium: 900px;
 $break-large: 1200px;
@@ -39,7 +40,6 @@ body {
   overflow-x:hidden;
   letter-spacing: 1px;
   line-height: 27px;
-
 
   &.fixed-position {
 	  overflow: hidden;
