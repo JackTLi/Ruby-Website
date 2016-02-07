@@ -93,6 +93,7 @@ body {
 .horizontally-center {
   position: relative;
   left: 50%;
+	-webkit-transform: translate(-50%);
   transform: translateX(-50%);
 }
 
