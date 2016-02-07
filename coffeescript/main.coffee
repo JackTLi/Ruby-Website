@@ -16,6 +16,15 @@ jQuery ->
 		$('.dimmer').toggleClass('open')
 		$('body').toggleClass("fixed-position")
 
+	$(".primary-link").click ->
+		$('#hamburger').toggleClass('open')
+		$('.nav-slider').toggleClass('open')
+		$('.dimmer').toggleClass('open')
+		$('body').toggleClass("fixed-position")
+		$('.portfolio-menu').removeClass('open')
+		$('.primary-menu').removeClass('portfolio-opened')
+		$('.bottom-nav-items').removeClass('portfolio-opened')
+
 	$('#nav-portfolio').click ->
 		$('.portfolio-menu').toggleClass('open')
 		$('.primary-menu').toggleClass('portfolio-opened')
