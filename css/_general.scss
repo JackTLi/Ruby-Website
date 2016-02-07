@@ -69,6 +69,16 @@ body {
 	-o-transition: 0.3s;
 	transition: 0.3s;
 
+	@media screen and (max-width: $break-small-mobile) {
+		background-color: #fff;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}
+
+
+
 	&.open {
 		visibility: visible;
 		opacity: 1;
