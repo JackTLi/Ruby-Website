@@ -98,11 +98,29 @@ img.header-label {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
+
+	@media screen and (max-width: $break-small-mobile) {
+		right: 10px;
+		bottom: 10px;
+		font-size: 16px;
+		letter-spacing: 2px;
+		h2 {
+			font-size: 25px;
+			margin-bottom: 10px;
+		}
+		p {
+			line-height: 25px;
+		}
+	}
 }
 
 #knowledgehookSplash {
 	.pos-info {
     top: 150px;
     right: 100px;
+		@media screen and (max-width: $break-small-mobile) {
+			top: 100px;
+			right: 10px;
+		}
   }
 }

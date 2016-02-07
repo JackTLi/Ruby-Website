@@ -15,20 +15,14 @@ $nav-height-medium: 80px;
       height: ($nav-height-large / 2);
     }
   }
-}
 
-@media screen and (max-width: $break-large) {
-  .nav {
-    //height: $nav-height-medium;
-    //line-height: $nav-height-medium;
-
-    .logo {
-      img {
-        //height: ($nav-height-medium / 2);
-        //position:relative;
-      }
-    }
-  }
+	@media screen and (max-width: $break-small-mobile) {
+		z-index: 5;
+		line-height: 120px;
+		.logo img {
+			height: 40px;
+		}
+	}
 }
 
 @keyframes nav-slide-out {
@@ -71,6 +65,10 @@ $nav-height-medium: 80px;
 
 	&.open {
 		right:0;
+
+		@media screen and (max-width: $break-small-mobile) {
+			right: calc(100% - 300px);
+		}
 	}
 
 	a {
@@ -80,6 +78,10 @@ $nav-height-medium: 80px;
 	ul {
 		list-style-type: none;
 		margin-top: 50px;
+
+		@media screen and (max-width: $break-small-mobile) {
+			margin-top: 130px;
+		}
 
 		&.primary-menu {
 			position: absolute;
@@ -154,6 +156,10 @@ $nav-height-medium: 80px;
 			-o-transition: 0.5s ease-out;
 			transition: 0.5s ease-out;
 
+			@media screen and (max-width: $break-small-mobile) {
+				padding-top: 100px;
+			}
+
 			&.open {
 				left: 0px;
 			}
@@ -171,7 +177,6 @@ $nav-height-medium: 80px;
 					font-weight: bold;
 				}
 			}
-
 		}
 	}
 }
@@ -184,7 +189,7 @@ $nav-height-medium: 80px;
 	position: absolute;
 	right: 0;
 	top: 50px;
-	z-index: 3;
+	z-index: 999999;
 
 	width: 40px;
 	height: 45px;
@@ -198,8 +203,8 @@ $nav-height-medium: 80px;
 	&.open {
 		right: 300px;
 
-		@media screen and (max-width: $break-mobile) {
-			// right: 0px;
+		@media screen and (max-width: $break-small-mobile) {
+			right: 0px;
 		}
 
 	}

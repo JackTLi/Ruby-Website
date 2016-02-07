@@ -97,8 +97,15 @@
     right: 10px;
     top: 20px;
 
+		@media screen and (max-width: $break-mobile) {
+			left: 20px;
+			right: auto;
+			top: auto;
+			bottom: 15px;
+		}
+
 		@media screen and (max-width: $break-small-mobile) {
-			right: 5px;
+			bottom: 5px;
 		}
   }
 }
@@ -109,11 +116,19 @@
     position: relative;
     left: 20px;
     top: 20px;
+
+		@media screen and (max-width: $break-mobile) {
+			top: 15px;
+		}
+		@media screen and (max-width: $break-small-mobile) {
+			top: 5px;
+			left: 40px;
+		}
   }
 
   .content {
-    margin-top: 50px;
-	 position: relative;
+		margin-top: 50px;
+		position: relative;
 
     p {
       letter-spacing: 1px;
@@ -121,6 +136,11 @@
 
       margin-left: 50px;
       margin-right: 50px;
+
+			@media screen and (max-width: $break-mobile) {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
     }
   }
 }
@@ -131,16 +151,16 @@
   background-size: cover;
   width: 60%;
 
-	.mobile {
-		display: none;
-		position: absolute;
-		color: $font-color;
-		font-weight: 100;
-		transform: translateX(100%);
-		right: -20px;
-		@media screen and (max-width: $break-small-mobile) {
-			right: -15px;
-		}
+	@media screen and (max-width: $break-mobile) {
+		width: 100%;
+		height: 300px;
+	}
+
+	@media screen and (max-width: $break-small-mobile) {
+		height: 150px;
+		width: calc(100% - 40px);
+		margin-left: 20px;
+		margin-right: 20px;
 	}
 }
 
@@ -150,21 +170,8 @@
 }
 
 @media screen and (max-width: $break-mobile) {
-	.imageBox {
-		.mobile {
-			display: initial;
-		}
-	}
 
 	.textBox {
-		label {
-			top: 15px;
-			left: 50px;
-		}
-
-		.desktop {
-			display: none;
-		}
 
 		.content {
 			margin-top: 0;
@@ -173,10 +180,6 @@
 		&.why-text {
 			width: 100%;
 		}
-	}
-
-	.why-box {
-		height: 300px;
 	}
 
 }
@@ -203,15 +206,8 @@
 			right: -10px;
 		}
 	}
-}
 
-.who-text {
-	width: 60%;
-	position: relative;
-}
-
-@media screen and (max-width: $break-mobile) {
-	.who-box {
+	@media screen and (max-width: $break-mobile) {
 		margin-left: 0px;
 		width: 50%;
 		margin-right: 50%;
@@ -228,18 +224,24 @@
 		}
 	}
 
-	.who-text {
+	@media screen and (max-width: $break-small-mobile) {
+		height: 230px;
+		.who {
+			right: 5px;
+		}
+	}
+}
+
+.who-text {
+	width: 60%;
+	position: relative;
+
+	@media screen and (max-width: $break-mobile) {
 		width: 100%;
 
 		.desktop {
 			display: none;
 		}
-	}
-}
-
-@media screen and (max-width: $break-small-mobile) {
-	.who-box .who {
-		right: 5px;
 	}
 }
 
@@ -261,9 +263,15 @@
 
 	img.ipad {
 		position: absolute;
-		height: 225px;
+		height: 300px;
 		left: -50px;
 		bottom: 0;
+	}
+
+	@media screen and (max-width: $break-mobile) {
+		img.ipad {
+			height: 225px;
+		}
 	}
 
 	@media screen and (max-width: $break-small-mobile) {
@@ -312,12 +320,16 @@
 }
 @media screen and (max-width: $break-small-mobile) {
 	.what-banner {
+		height: 250px;
 		.ido {
-			bottom: 35px;
+			bottom: 15px;
+			right: 5px;
 		}
 		.what-box {
+			height: 200px;
 			label {
 				bottom: 5px;
+				right: 5px;
 			}
 		}
 	}
