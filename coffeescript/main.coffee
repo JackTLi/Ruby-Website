@@ -1,4 +1,4 @@
-portfolio_items = ["knowledgehook", "jamaquiz", "familybbq", "partnerpackage"]
+portfolio_items = ["knowledgehook", "jamaquiz", "familybbq", "impactreport", "partnerpackage"]
 num_items = portfolio_items.length
 current_item = -1
 
