@@ -27,6 +27,23 @@
 	}
 }
 
+@media screen and (max-width: $break-mobile) {
+
+	.introduction-box {
+		margin-top: 0;
+	}
+
+	.introduction-content {
+
+		p {
+			margin-left: 0;
+			margin-right: 0;
+			text-align: left;
+		}
+	}
+
+}
+
 .poster-intro {
 	background-image: url('../images/poster-intro.png');
 }
@@ -61,6 +78,13 @@
 		background-color: $primary-accent;
 		color: #fff;
 	}
+
+	@media screen and (max-width: $break-mobile) {
+		left: 50%;
+		 -webkit-transform: translateX(-50%);
+		transform: translateX(-50%);
+		position: relative;
+	}
 }
 
 
@@ -88,6 +112,11 @@
 		h2 {
 			padding-right: 0;
 			width: calc(100% + 50px);
+		}
+		@media screen and (max-width: $break-mobile) {
+			h2 {
+				width: auto;
+			}
 		}
 	}
 }
@@ -117,6 +146,16 @@
 		width: 40%;
 		img {
 			width: 100%;
+		}
+
+		@media screen and (max-width: $break-mobile) {
+			height: auto !important;
+			width: 100% !important;
+
+			img {
+				width: 70% !important;
+				height: auto !important;
+			}
 		}
 	}
 }
@@ -160,7 +199,7 @@
 #impactreport-problem {
 	.old-report {
 		background-image: url('../images/impactreport/2014-report.png');
-		background-size: contain;
+		background-size: auto 80%;
 		background-position: center center;
 	}
 }
@@ -281,6 +320,8 @@
 		.text-box {
 			width: auto !important;
 			margin:0 !important;
+			padding-left: 20px;
+			padding-right:20px;
 		}
 
 		.imagebox {
@@ -328,8 +369,8 @@
 			}
 		}
 
-		#knowledgehook-releasedate {
-			width: calc(100% - 200px) !important;
+		#releasedate {
+			width: calc(100% - 40px) !important;
 			text-align: center;
 		}
 	}
@@ -374,11 +415,21 @@
 
 @media screen and (max-width: $break-mobile) {
 	.basic-section {
+
+		padding-top: 50px;
+
+		h2 {
+			padding-bottom:0;
+			padding-top: 10px;
+		}
+
 		.one-half {
 			width: 100%;
 
 			&.text {
-				width: calc(100% - 100px);
+				margin-left: 20px;
+				margin-right: 20px;
+				width: calc(100% - 40px);
 			}
 		}
 	}

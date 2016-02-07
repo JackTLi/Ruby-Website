@@ -197,6 +197,11 @@ $nav-height-medium: 80px;
 
 	&.open {
 		right: 300px;
+
+		@media screen and (max-width: $break-mobile) {
+			// right: 0px;
+		}
+
 	}
 
 	span {
