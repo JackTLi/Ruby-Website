@@ -44,6 +44,10 @@ body {
   &.fixed-position {
 	  overflow: hidden;
   }
+
+	@media screen and (max-width: $break-small-mobile) {
+		font-size: 14px;
+	}
 }
 
 .se-pre-con {

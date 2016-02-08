@@ -184,6 +184,14 @@
 	}
 }
 
+#allpartnersmeeting-infoarch {
+	.meeting-screenshot {
+		background-image: url('../images/allpartnersmeeting/web.png');
+		background-size: contain;
+		background-position: center center;
+	}
+}
+
 #knowledgehook-problem {
 	.screenshot {
 		width: 50%;
@@ -206,8 +214,19 @@
 
 #knowledgehook-solution {
 	.imagebox {
+		height: auto !important;
+
+		@media screen and (max-width: $break-small-mobile) {
+			padding-top: 0;
+		}
+
 		img {
-			float: inherit;
+			float: inherit !important;
+
+			@media screen and (max-width: $break-small-mobile) {
+				width: 100% !important;
+				height: auto !important;
+			}
 		}
 	}
 }
@@ -372,6 +391,31 @@
 		#releasedate {
 			width: calc(100% - 40px) !important;
 			text-align: center;
+		}
+	}
+}
+
+#jamaquiz-final {
+
+	h2 {
+		text-align: left;
+
+		@media screen and (max-width: $break-mobile) {
+			text-align: center;
+		}
+	}
+
+	.game-iframe {
+		background-color: $portfolio-beige-box;
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		iframe {
+			position: relative;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
 		}
 	}
 }

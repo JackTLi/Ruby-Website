@@ -98,13 +98,14 @@
     top: 20px;
 
 		@media screen and (max-width: $break-mobile) {
-			left: 20px;
+			left: 50px;
 			right: auto;
 			top: auto;
 			bottom: 15px;
 		}
 
 		@media screen and (max-width: $break-small-mobile) {
+			left: 20px;
 			bottom: 5px;
 		}
   }
@@ -119,6 +120,7 @@
 
 		@media screen and (max-width: $break-mobile) {
 			top: 15px;
+			left: 50px;
 		}
 		@media screen and (max-width: $break-small-mobile) {
 			top: 5px;
@@ -137,7 +139,7 @@
       margin-left: 50px;
       margin-right: 50px;
 
-			@media screen and (max-width: $break-mobile) {
+			@media screen and (max-width: $break-small-mobile) {
 				margin-left: 20px;
 				margin-right: 20px;
 			}
@@ -352,7 +354,7 @@
 		margin-bottom: 0px;
 
 		@media screen and (max-width: $break-small-mobile) {
-			font-size: 25px;
+			font-size: 20px;
 		}
 	}
 
@@ -395,6 +397,16 @@
 			margin-right: 50px;
 			margin-left: 50px;
 			height: auto;
+		}
+	}
+}
+
+@media screen and (max-width: $break-small-mobile) {
+	.what-content {
+		.item {
+			width: calc(100% - 40px);
+			margin-right: 20px;
+			margin-left: 20px;
 		}
 	}
 }
