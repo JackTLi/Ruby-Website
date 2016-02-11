@@ -223,6 +223,11 @@
 		img {
 			float: inherit !important;
 
+			@media screen and (max-width: $break-mobile) and (min-width: $break-small-mobile) {
+				width: 100% !important;
+				height: auto !important;
+			}
+
 			@media screen and (max-width: $break-small-mobile) {
 				width: 100% !important;
 				height: auto !important;
@@ -303,6 +308,7 @@
 		h2 {
 			font-weight: bold;
 			font-size: 25px;
+			line-height: 36px;
 			letter-spacing: 5px;
 			color: $primary-accent;
 		}

@@ -39,6 +39,10 @@
 	background-image: url('../images/allpartnersmeeting/header.jpg');
 	background-size: cover;
 	background-position: center center;
+	h2, p {
+		color: #fff;
+		text-shadow: none;
+	}
 }
 
 .header-text {
