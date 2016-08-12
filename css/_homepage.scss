@@ -86,6 +86,10 @@
 			letter-spacing: 7px;
 		}
   }
+
+	&.last {
+		margin-bottom: -50px;
+	}
 }
 
 .imageBox {
@@ -458,7 +462,7 @@
 .portfolio-item {
 	width: 30%;
 	height: 250px;
-	margin: 25px 10px;
+	margin: 25px 0px;
 }
 
 @media screen and (max-width: $break-mobile) {
@@ -469,7 +473,7 @@
 
 @media screen and (max-width: $break-small-medium) {
 	.portfolio-item {
-		width: 80%;
+		width: 90%;
 	}
 }
 

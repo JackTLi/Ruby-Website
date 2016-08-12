@@ -271,3 +271,15 @@ body {
 	margin: 0px 40px;
 	position: relative;
 }
+
+@media screen and (max-width: $break-mobile) {
+	.inner-content-box {
+		margin: 0px 20px;
+	}
+}
+
+@media screen and (max-width: $break-small-medium) {
+	.inner-content-box {
+		margin: 0px 0px;
+	}
+}
