@@ -18,8 +18,9 @@
 $font-stack: Proxima, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 $break-small-mobile: 600px;
-$break-mobile: 1000px;
+$break-small-medium: 750px;
 $break-medium: 900px;
+$break-mobile: 1000px;
 $break-large: 1200px;
 $break-xlarge: 2300px;
 
@@ -30,6 +31,7 @@ $font-color: #888;
 $portfolio-grey-box: rgba(0, 0, 0, 0.03);
 $portfolio-beige-box: #efe3dc;
 $loading-background: #f6f6f6;
+$light-background-alt: #FAF9F8;
 
 body {
   margin: 0;
@@ -254,6 +256,30 @@ body {
 	}
 }
 
+.skinny-text {
+	font-weight: 100;
+}
+
 .selected-page {
 	font-weight:bold;
+}
+
+.inner-content-box {
+	background-color: $light-background-alt;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 0px 40px;
+	position: relative;
+}
+
+@media screen and (max-width: $break-mobile) {
+	.inner-content-box {
+		margin: 0px 20px;
+	}
+}
+
+@media screen and (max-width: $break-small-medium) {
+	.inner-content-box {
+		margin: 0px 0px;
+	}
 }

@@ -81,6 +81,15 @@ img.header-label {
   }
 }
 
+@media screen and (max-width: $break-small-medium) {
+	.header-text {
+		top: 100px;
+	}
+	img.header-label {
+		width: 150px;
+	}
+}
+
 .header-arrow {
   position: absolute;
   bottom: 20px;
