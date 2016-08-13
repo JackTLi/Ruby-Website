@@ -1,5 +1,5 @@
 $body-color: #F2F1F1;
-$footer-color: #3D4246;
+$footer-color: #404751;
 
 .portfolio-hero {
 	position: relative;
@@ -14,6 +14,13 @@ $footer-color: #3D4246;
 	width: calc(100% - 160px);
 	max-width: $break-large;
 	z-index: 1;
+
+	@media screen and (max-width: $break-mobile) {
+		width: calc(100% - 80px);
+	}
+	@media screen and (max-width: $break-small-mobile) {
+		width: 100%;
+	}
 }
 
 .summary {
@@ -26,41 +33,115 @@ $footer-color: #3D4246;
 		margin: 0px 80px;
 		padding: 30px 0px;
 		border-bottom: 1px solid #888;
+
+		@media screen and (max-width: $break-mobile) {
+			margin: 0px 40px;
+		}
 	}
 }
 
 .body {
-	margin-bottom: -80px;
+	margin-bottom: -100px;
+
 	.body-container {
 		margin: 0px 80px;
 		padding: 30px 0px;
+
+		@media screen and (max-width: $break-mobile) {
+			margin: 0px 40px;
+		}
 
 		img {
 			margin: 60px 0px;
 			width: 100%;
 		}
 	}
+
+	ul {
+		list-style: none;
+	}
 }
 
 .split-section {
 	display: flex;
+	@media screen and (max-width: $break-medium) {
+		flex-wrap: wrap;
+	}
 
 	.body-container {
 		padding: 0;
+		align-self: center;
+
+		@media screen and (max-width: $break-medium) {
+			order: 2;
+		}
 	}
 
-	img {
-		align-self: flex-start;
+	.image-container {
+		align-self: center;
+		width: 80%;
+		img {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: $break-medium) {
+		.image-container {
+			width: 100%;
+			order: 1;
+			position: relative;
+
+			img {
+				width: 60%;
+				float: right;
+			}
+		}
 	}
 }
 
 .footer {
 	background-color: $footer-color;
-	height: 500px;
+}
+
+.view-website {
+	padding: 5px 20px;
+	background-color: #fff;
+	color: $footer-color;
+	font-weight: bold;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-decoration: none;
+	border-radius: 2px;
+
+	&:hover {
+		color: #fff;
+		background-color: $footer-color;
+		border: 1px solid #fff;
+	}
 }
 
 .footer-label-container {
 	color: #fff;
-	padding-top: 140px;
+	padding-top: 200px;
 	text-align: center;
+
+	@media screen and (max-width: $break-mobile) {
+		padding-top: 150px;
+	}
+}
+
+.footer-content {
+	background-color: $footer-color;
+	padding: 60px 0px;
+	img {
+		width: 100%;
+		margin: 40px 0px;
+	}
+
+	@media screen and (max-width: $break-mobile) {
+		padding: 30px 0px;
+		img {
+			margin: 10px 0px;
+		}
+	}
 }
