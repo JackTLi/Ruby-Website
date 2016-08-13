@@ -256,6 +256,21 @@ body {
 	}
 }
 
+li.view-all {
+	margin-top: 50px !important;
+}
+
+.view-all-portfolio {
+	border: 2px solid $primary-solid;
+	font-weight: bold;
+	padding: 5px 10px;
+	color: $primary-solid !important;
+	&:hover {
+		background-color: $primary-solid;
+		color: #fff !important;
+	}
+}
+
 .skinny-text {
 	font-weight: 100;
 }
