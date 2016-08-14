@@ -1,6 +1,7 @@
 $body-color: #F2F1F1;
 $footer-color: #404751;
 $footer-light: #E2F1F4;
+$footer-alt: #57ACAC;
 
 .portfolio-hero {
 	position: relative;
@@ -114,8 +115,8 @@ ul.no-indent {
 .footer {
 	background-color: $footer-color;
 
-	&.light {
-		background-color: $footer-light;
+	&.alt-color {
+		background-color: $footer-alt;
 
 		.footer-label-container {
 			color: $footer-color;
@@ -132,7 +133,7 @@ ul.no-indent {
 		}
 
 		.footer-content {
-			background-color: $footer-light;
+			background-color: $footer-alt;
 		}
 	}
 }
