@@ -2,7 +2,7 @@
 (function() {
   var checkOverflow300, checkOverflow400, current_item, num_items, portfolio_items;
 
-  portfolio_items = ["flippfinds", "shopifyinterns", "livingtogether", "jacktli", "jamaquiz", "familybbq", "impactreport", "partnerpackage"];
+  portfolio_items = ["flippfinds", "shopifyinterns", "livingtogether", "jacktli", "jamaquiz", "familybbq", "impactreport", "partnerpackage", "allpartnersmeeting"];
 
   num_items = portfolio_items.length;
 
