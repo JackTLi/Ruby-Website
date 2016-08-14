@@ -1,5 +1,6 @@
 $body-color: #F2F1F1;
 $footer-color: #404751;
+$footer-light: #E1EFED;
 
 .portfolio-hero {
 	position: relative;
@@ -28,6 +29,7 @@ $footer-color: #404751;
 	bottom : 0;
 	left: 50%;
   transform: translateX(-50%);
+	box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.15);
 
 	.summary-container {
 		margin: 0px 80px;
@@ -42,6 +44,7 @@ $footer-color: #404751;
 
 .body {
 	margin-bottom: -100px;
+	box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.15);
 
 	.body-container {
 		margin: 0px 80px;
@@ -56,10 +59,14 @@ $footer-color: #404751;
 			width: 100%;
 		}
 	}
+}
 
-	ul {
-		list-style: none;
-	}
+ul.no-list-style {
+	list-style: none;
+}
+
+ul.no-indent {
+	padding-left: 0;
 }
 
 .split-section {
@@ -71,6 +78,11 @@ $footer-color: #404751;
 	.body-container {
 		padding: 0;
 		align-self: center;
+
+		&.text-container {
+		 align-self: flex-start;
+		 width: 50%;
+		}
 
 		@media screen and (max-width: $break-medium) {
 			order: 2;
@@ -101,6 +113,28 @@ $footer-color: #404751;
 
 .footer {
 	background-color: $footer-color;
+
+	&.light {
+		background-color: $footer-light;
+
+		.footer-label-container {
+			color: $footer-color;
+		}
+
+		.view-website {
+			background-color: $footer-color;
+			color: #fff;
+			&:hover {
+				color: $footer-color;
+				background-color: $footer-light;
+				border: 1px solid $footer-color;
+			}
+		}
+
+		.footer-content {
+			background-color: $footer-light;
+		}
+	}
 }
 
 .view-website {

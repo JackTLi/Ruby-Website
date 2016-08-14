@@ -503,6 +503,13 @@
 					font-weight: bold;
 					margin-bottom: 10px;
 				}
+
+				@media screen and (max-width: $break-small-medium) {
+					font-size: 10px;
+					&.title {
+						font-size: 15px;
+					}
+				}
 			}
 		}
 	}

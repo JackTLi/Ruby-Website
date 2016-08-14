@@ -1,0 +1,85 @@
+extends ./layout.jade
+
+block title
+	title Ruby Cheung - LivingTogether
+
+block content
+	section.portfolio-hero.full-width.full-height#livingtogetherSplash
+		div.main-content.summary
+			div.summary-container
+				h1 LIVING TOGETHER
+				div
+					h4.skinny-text February 21-22, 2016
+					h4 
+						| Role: 
+						span.skinny-text UX Designer
+					h4 
+						| Hackathon: 
+						span.skinny-text McHacks 2016
+	
+	section.main-content.body
+		div.body-container
+			p.				
+				Living Together is a webapp that enables roommates to collaborate together by communicating through a centralized message board, and scheduling chores using a chores board. The platform allows users to find quality future roommates and weed out bad roommates via a rating system associated with each user, who is authenticated using their facebook profile. My role in this project was the designer. I created the user flow, interface, logo and brand. The project was created in 24 hours for McHacks 2016 and finished 5th place out of 80 submitted hacks. It can be viewed at <a href="http://livingtogether.io">livingtogether.io</a>
+				
+				
+		div.split-section
+			div.body-container.text-container
+				h2 USER PROBLEM
+				ol
+					li. 
+						Hard time finding good roommates to live with.
+					li. 
+						No hub to communicate with roommates, made it difficult to schedule chores and track completion of them.
+					li.
+						Forced to rely on group messaging such as Facebook to communicate to each other.
+			div.body-container.text-container
+				h2 REQUIREMENTS
+				ul
+					li Splash Screen
+					li Dashboard
+					li Profile
+		
+		div.body-container
+			h4 SPLASH SCREEN:
+			ul.no-list-style.no-indent
+				li
+					p.
+						Contains the login page. Logins are attached to Facebook to preserve integrity of the user (discourages a user to make multiple accounts) and also allows users to sign in an account that they are likely to already have, rather than having to create a new account.
+			br
+			
+			h4 DASHBOARD:
+			ul.no-list-style.no-indent
+				li 
+					h5 NEW USERS:
+					p.
+						The first screen contains a box that prompts the user to join a home using a unique home id. A user is able to join multiple homes, a feature that is useful for people that have subletted their room temporarily, but want to still stay connected with roommates while living elsewhere with another set of roommates.
+				li
+					h5 CURRENT USERS:
+					p.												
+						Current users will see a message board and a chore board for each home. The message board is the primary form of communication between roommates, where roommates can leave messages, and events are also posted such as creation of a new chore, or completion of a chore. The chore board is where chores can be managed and created.
+				br
+	
+			h4 PROFILE:				
+			ul.no-list-style.no-indent
+				li 
+					h5 RANKING SYSTEM:
+					p.
+						A user's rank as a roommate is based on feedback from previous roommates. This encourages good roommate behavior, and becomes a useful metric when finding potential future roommates.
+				li
+					h5 USER DETAILS:
+					p.						
+						A few personal details are listed on a user's profile such Gender, School and Preferences. This helps the roommate search process by providing some basic information about the user.
+		
+			img(src="images/livingtogether/notebook-1.png")
+			
+	section.footer.light
+		div.footer-label-container#flippfinds
+			h1.footer-label CURRENT LOOK
+			a(href="http://livingtogether.io").view-website VIEW WEBSITE
+		div.main-content.footer-content
+			img(src="images/livingtogether/f-1.jpg")
+			img(src="images/livingtogether/f-2.jpg")
+			img(src="images/livingtogether/f-3.jpg")
+			img(src="images/livingtogether/f-4.jpg")
+			
