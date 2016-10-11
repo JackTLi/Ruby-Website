@@ -1,0 +1,104 @@
+doctype html
+html(lang="en")
+
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content="width=device-width", initial-scale="1")
+		block title
+		link(rel='stylesheet', href='css/site.css', type='text/css')
+		script(type='text/javascript' src='js/jquery.min.js')
+		script(type='text/javascript' src='js/main.js')
+		script(type='text/javascript' src='js/analytics.js')
+		
+		link(rel="shortcut icon", href="favicon.ico", type="image/x-icon")
+		link(rel="icon", href="favicon.ico", type="image/x-icon")  	
+			
+	body
+		
+		div.se-pre-con
+		
+		div.dimmer.full-width.full-height
+	
+		div.horizontally-center.full-width.nav
+			a.logo(href="index.html")
+				img(src="images/logo.png")
+			
+			div#hamburger.slide-toggle
+				span
+				span
+				span
+				
+		div.nav-slider
+			ul.primary-menu
+				a(href="index.html#whyabike").primary-link
+					li#nav-why 
+						div.icon#image-why
+							img(src="images/nav/bike.png")
+						|WHY 
+						span A BIKE?
+				a(href="index.html#whoami").primary-link
+					li#nav-who 
+						div.icon#image-who
+							img(src="images/nav/who.png")
+						|WHO 
+						span AM I?
+				a(href="index.html#whatido").primary-link
+					li#nav-what 
+						div.icon#image-what
+							img(src="images/nav/what.png")
+						|WHAT 
+						span I DO
+				li#nav-portfolio
+					div.icon#image-portfolio
+						img(src="images/nav/portfolio.png")
+					|THINGS 
+					span I'VE DONE
+			ul.portfolio-menu
+				li
+					h2 WEB
+				li 
+					a(href="flippfinds.html")#pfnav-flippfinds FLIPP FINDS
+				li 
+					a(href="shopifyinterns.html")#pfnav-shopifyinterns SHOPIFY INTERNS PAGE
+				li 
+					a(href="livingtogether.html")#pfnav-livingtogether LIVING TOGETHER
+				li 
+					a(href="jacktli.html")#pfnav-jacktli JACKTLI
+				
+				li
+					h2 MOBILE
+				li 
+					a(href="jamaquiz.html")#pfnav-jamaquiz JAMAQUIZ
+				
+				li
+					h2 PRINT
+				li 
+					a(href="familybbq.html")#pfnav-familybbq FAMILY BBQ
+				li 
+					a(href="impactreport.html")#pfnav-impactreport IMPACT REPORT
+				li 
+					a(href="partnerpackage.html")#pfnav-partnerpackage PARTNER PACKAGE
+				li 
+					a(href="allpartnersmeeting.html")#pfnav-allpartnersmeeting ALL PARTNERS MEETING
+					
+				li.view-all
+					a(href="index.html#thingsihavedone").primary-link.view-all-portfolio VIEW ALL
+					
+			div.bottom-nav-items
+				div.social-media-icons
+					a(href="https://www.behance.net/rubykcheung")
+						div.icon#behance
+					a(href="https://ca.linkedin.com/in/ruby-cheung-32250341")
+						div.icon#linkedin
+					a(href="mailto:rkcheung@uwaterloo.ca")
+						div.icon#mail
+						
+				div.copyright &#169 ALL RIGHTS RESERVE TO RUBY CHEUNG
+							
+		block content
+		
+		div.dark-arrows
+			div.content-width#navigation-arrows
+				div.nav-arrow.prev-portfolio
+				div.nav-arrow.next-portfolio
